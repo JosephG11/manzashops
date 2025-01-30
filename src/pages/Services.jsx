@@ -1,4 +1,3 @@
-import ServicesHero from "../components/Services/ServicesHero";
 import ServicesSection from "../components/Services/ServicesSection";
 import ServicesSuggestions from "../components/Services/ServicesSuggestions";
 import {
@@ -13,8 +12,6 @@ import {
 const Services = () => {
   return (
     <section className="bg-white w-full">
-      <ServicesHero />
-
       <ServicesSuggestions />
 
       <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">

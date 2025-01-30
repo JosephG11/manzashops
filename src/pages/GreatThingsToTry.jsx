@@ -1,4 +1,3 @@
-import GtttHero from "../components/GreatThingsToTry/GtttHero";
 import GtttSection from "../components/GreatThingsToTry/GtttSection";
 import GtttSuggestions from "../components/GreatThingsToTry/GtttSuggestions";
 import {
@@ -13,8 +12,6 @@ import {
 const GreatThingsToTry = () => {
   return (
     <section className="bg-white w-full">
-      <GtttHero />
-
       <GtttSuggestions />
 
       <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">

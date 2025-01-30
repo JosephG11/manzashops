@@ -51,8 +51,6 @@ import { cvsl } from "../../constants/Dash/topBadges/cvs11/badge";
 import { target } from "../../constants/Dash/topBadges/target/badge";
 import { macys } from "../../constants/Dash/topBadges/macys/badge";
 
-
-
 const Content = () => {
   return (
     <section className="flex items-center flex-col lg:gap-28 gap-10 bg-[#121212] lg:py-28 py-10">
@@ -60,27 +58,16 @@ const Content = () => {
         ads={
           <>
             <AdRow01 data={adRow1data001} />
-
-            <AdRow02
-              ad1Href={mockHref}
-              ad1Src={"/manzashops/assets/ad/target2.jpeg"}
-              ad1Alt={"target2"}
-              ad2Path={"listings"}
-              ad2Src={"/manzashops/assets/ad/YouTube Thumbnail-1 6.png"}
-              ad2Alt={"Listings"}
-            />
           </>
         }
       />
 
       <TopBadges
-        data={[ cvsl, pcRichard, visor, target, abercrombie, bestBuy, macys, ]}
+        data={[cvsl, pcRichard, visor, target, abercrombie, bestBuy, macys]}
       />
 
-
-
       <BadgeSection
-        data={[ ourContentShop, sports, paidTopSpot, bangUrBuck, getYourBestBuy,]}
+        data={[ourContentShop, sports, paidTopSpot, bangUrBuck, getYourBestBuy]}
       />
 
       <BadgeSection
@@ -109,8 +96,6 @@ const Content = () => {
           </>
         }
       />
-
-
 
       <BadgeSection
         data={[freshFinds, gearUp, premiumPicks, dealHunters, smartPicks]}
