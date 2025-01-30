@@ -1,7 +1,9 @@
+import MovieHero from "../components/Movies/MovieHero";
+
 const Movies = () => {
   return (
-    <section className="h-[50vh] flex justify-center items-center">
-      Movies
+    <section className="bg-white w-full">
+      <MovieHero />
     </section>
   );
 };
