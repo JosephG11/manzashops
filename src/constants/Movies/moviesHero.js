@@ -27,10 +27,12 @@ export const sliderData = [
 
 export const posters = {
   poster01: {
+    href: "",
     src: "/manzashops/assets/ad/movie24.jpeg",
     alt: "test",
   },
   poster02: {
+    href: "",
     src: "/manzashops/assets/ad/movie31.jpeg",
     alt: "test",
   },

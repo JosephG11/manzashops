@@ -1,15 +1,17 @@
 const MovieContentLeftSidebar = ({ title, links }) => (
-  <div className="flex flex-col items-center w-[320px] bg-black p-2 shrink-0 gap-4">
-    <div className="bg-header rounded-[10px] w-full px-8 py-4">
-      <p className="text-white">{title}</p>
+  <div className="flex xl:flex-col flex-row items-center xl:w-[320px] w-full bg-black shrink-0 xl:gap-4 gap-2">
+    <div className="xl:w-full w-fit xl:pr-4 pr-0 xl:pl-4 pl-2 xl:pb-0 pb-2">
+      <p className="bg-header rounded-[10px] px-8 py-4 text-nowrap text-white">
+        {title}
+      </p>
     </div>
 
-    <div className="flex flex-col gap-2 w-full px-8 overflow-auto">
+    <div className="flex xl:flex-col flex-row gap-2 w-full xl:pl-8 pl-0 xl:pr-8 pr-2 xl:pb-0 pb-2 overflow-auto">
       {links.map(({ href, label }, i) => (
         <a
           key={i}
           href={href}
-          className="bg-header rounded-[10px] w-full px-8 py-4 flex justify-center items-center border-[1px] border-white hover:border-secondary text-white"
+          className="bg-header rounded-[10px] w-full px-8 py-4 flex justify-center items-center border-[1px] border-white hover:border-secondary text-white text-nowrap"
         >
           {label}
         </a>

@@ -3,7 +3,7 @@ import React from "react";
 const MovieImageSlider = ({ data }) => {
   return (
     <>
-      <div className="relative w-full h-[50vh] 2xlc:h-[40vh]">
+      <div className="relative w-full h-[55vh] 2xlc:h-[45vh]">
         <div className="flex w-full h-full overflow-x-auto">
           {data.map(({ id, href, src, styles }) => (
             <a key={id} href={href} className="w-full flex-shrink-0">
