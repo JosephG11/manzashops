@@ -1,3 +1,4 @@
-import { sliderData, posters } from "./MoviesHero";
+import { sliderData, posters } from "./moviesHero";
+import { movieLinks } from "./movieContent";
 
-export { sliderData, posters };
+export { sliderData, posters, movieLinks };

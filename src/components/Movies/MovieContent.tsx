@@ -1,6 +1,27 @@
 import React from "react";
 import { useEffect, useState, useRef } from "react";
 import { listingSectionData } from "../../constants/Listings";
+import { movieLinks } from "../../constants/Movies";
+
+const MovieContentLeftSidebar = ({ title, links }) => (
+  <div className="flex flex-col items-center w-[320px] bg-black p-2 shrink-0 gap-4">
+    <div className="bg-header rounded-[10px] w-full px-8 py-4">
+      <p className="text-white">{title}</p>
+    </div>
+
+    <div className="flex flex-col gap-2 w-full px-8 overflow-auto">
+      {links.map(({ href, label }, i) => (
+        <a
+          key={i}
+          href={href}
+          className="bg-header rounded-[10px] w-full px-8 py-4 flex justify-center items-center border-[1px] border-white hover:border-secondary text-white"
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+  </div>
+);
 
 const MovieContent = () => {
   const sections = listingSectionData.sections;
@@ -43,6 +64,17 @@ const MovieContent = () => {
             <p className="capitalize text-xl px-3 py-1">{sectionName}</p>
           </button>
         ))}
+      </div>
+
+      <div className="flex flex-col xl:flex-row w-full h-[80vh]">
+        <MovieContentLeftSidebar
+          title="Trending - 20 list"
+          links={movieLinks}
+        />
+
+        <div className="w-full bg-white"></div>
+
+        <div className="w-[320px] bg-header shrink-0"></div>
       </div>
     </section>
   );
