@@ -7,36 +7,36 @@ import {
 } from "./content";
 import { itemData } from "./spotlight";
 
-import { bangUrBuck } from "./badges/bang-4-ur-buck/badge";
-import { getYourBestBuy } from "./badges/get-your-best-buy/badge";
-import { ourContentShop } from "./badges/our-content-shop/badge";
-import { paidTopSpot } from "./badges/paid-top-spot/badge";
-import { sports } from "./badges/sports/badge";
+import { beautyShops } from "./badges/beauty-shops/badge";
+import { electronics } from "./badges/electronics/badge";
+import { clothing } from "./badges/clothing/badge";
+import { sneakers } from "./badges/sneakers/badge";
+import { jewelery } from "./badges/jewelery/badge";
 import { activeGear } from "./badges/active-gear/badge";
-import { exclusivePicks } from "./badges/exclusive-picks/badge";
-import { exploreTrends } from "./badges/explore-trends/badge";
-import { shopSmarter } from "./badges/shop-smarter/badge";
-import { valueVault } from "./badges/value-vault/badge";
-import { dealHunters } from "./badges/deal-hunters/badge";
-import { freshFinds } from "./badges/fresh-finds/badge";
-import { gearUp } from "./badges/gear-up/badge";
-import { premiumPicks } from "./badges/premium-picks/badge";
-import { smartPicks } from "./badges/smart-picks/badge";
-import { adventureReady } from "./badges/adventure-ready/badge";
-import { brightBuys } from "./badges/bright-buys/badge";
-import { eliteChoices } from "./badges/elite-choices/badge";
-import { savvySavings } from "./badges/savvy-savings/badge";
-import { topTrends } from "./badges/top-trends/badge";
-import { budgetFinds } from "./badges/budget-finds/badge";
-import { latestLooks } from "./badges/latest-looks/badge";
-import { outdoorEssentials } from "./badges/outdoor-essentials/badge";
-import { premiumSelections } from "./badges/premium-selections/badge";
-import { smartChoices } from "./badges/smart-choices/badge";
-import { bestDeals } from "./badges/best-deals/badge";
-import { fashionForward } from "./badges/fashion-forward/badge";
-import { inGear } from "./badges/in-gear/badge";
-import { luxuryLines } from "./badges/luxury-lines/badge";
-import { savingsSpotlight } from "./badges/savings-spotlight/badge";
+import { movies } from "./badges/movies/badge";
+import { supplements } from "./badges/supplements/badge";
+import { luxuryShops } from "./badges/luxury-shops/badge";
+import { giftCards } from "./badges/gift-cards/badge";
+import { justJackets } from "./badges/just-jackets/badge";
+import { justBoots } from "./badges/just-boots/badge";
+import { justHats } from "./badges/just-hats/badge";
+import { justDresses } from "./badges/just-dresses/badge";
+import { justSuits } from "./badges/just-suits/badge";
+import { ticketPlaces } from "./badges/ticket-places/badge";
+import { popularSportTeams } from "./badges/popular-sport-teams/badge";
+import { leagueShops } from "./badges/league-shops/badge";
+import { bySportTeam } from "./badges/by-sport-team/badge";
+import { streamingServices } from "./badges/streaming-services/badge";
+import { decorationsSupplies } from "./badges/decorations-supplies/badge";
+import { homeNecesities } from "./badges/home-necesities/badge";
+import { indoorHomeFans } from "./badges/indoor-home-fans/badge";
+import { furnitureEssentials } from "./badges/furniture-essentials/badge";
+import { justCandles } from "./badges/just-candles/badge";
+import { homeArt } from "./badges/home-art/badge";
+import { homeImprovement } from "./badges/home-improvement/badge";
+import { officeSuppliers } from "./badges/office-suppliers/badge";
+import { kitchenSupplies } from "./badges/kitchen-supplies/badge";
+import { rugs } from "./badges/rugs/badge";
 
 import { pcRichard } from "./topBadges/pcRichard/badge";
 import { abercrombie } from "./topBadges/abercrombie/badge";
@@ -44,36 +44,36 @@ import { bestBuy } from "./topBadges/bestBuy/badge";
 import { target } from "./topBadges/target/badge";
 
 const suggetionsItems = [
-  ourContentShop,
-  sports,
-  paidTopSpot,
-  bangUrBuck,
-  getYourBestBuy,
-  exploreTrends,
+  clothing,
+  jewelery,
+  sneakers,
+  beautyShops,
+  electronics,
+  supplements,
   activeGear,
-  exclusivePicks,
-  valueVault,
-  shopSmarter,
-  freshFinds,
-  gearUp,
-  premiumPicks,
-  dealHunters,
-  smartPicks,
-  topTrends,
-  adventureReady,
-  eliteChoices,
-  savvySavings,
-  brightBuys,
-  latestLooks,
-  outdoorEssentials,
-  premiumSelections,
-  budgetFinds,
-  smartChoices,
-  fashionForward,
-  inGear,
-  luxuryLines,
-  savingsSpotlight,
-  bestDeals,
+  movies,
+  giftCards,
+  luxuryShops,
+  justBoots,
+  justHats,
+  justDresses,
+  justJackets,
+  justSuits,
+  streamingServices,
+  ticketPlaces,
+  leagueShops,
+  bySportTeam,
+  popularSportTeams,
+  homeNecesities,
+  indoorHomeFans,
+  furnitureEssentials,
+  decorationsSupplies,
+  justCandles,
+  homeImprovement,
+  officeSuppliers,
+  kitchenSupplies,
+  rugs,
+  homeArt,
 ];
 
 export {
@@ -85,36 +85,36 @@ export {
   adRow05data001,
   adRow05data002,
   itemData,
-  ourContentShop,
-  sports,
-  paidTopSpot,
-  bangUrBuck,
-  getYourBestBuy,
-  exploreTrends,
+  clothing,
+  jewelery,
+  sneakers,
+  beautyShops,
+  electronics,
+  supplements,
   activeGear,
-  exclusivePicks,
-  valueVault,
-  shopSmarter,
-  freshFinds,
-  gearUp,
-  premiumPicks,
-  dealHunters,
-  smartPicks,
-  topTrends,
-  adventureReady,
-  eliteChoices,
-  savvySavings,
-  brightBuys,
-  latestLooks,
-  outdoorEssentials,
-  premiumSelections,
-  budgetFinds,
-  smartChoices,
-  fashionForward,
-  inGear,
-  luxuryLines,
-  savingsSpotlight,
-  bestDeals,
+  movies,
+  giftCards,
+  luxuryShops,
+  justBoots,
+  justHats,
+  justDresses,
+  justJackets,
+  justSuits,
+  streamingServices,
+  ticketPlaces,
+  leagueShops,
+  bySportTeam,
+  popularSportTeams,
+  homeNecesities,
+  indoorHomeFans,
+  furnitureEssentials,
+  decorationsSupplies,
+  justCandles,
+  homeImprovement,
+  officeSuppliers,
+  kitchenSupplies,
+  rugs,
+  homeArt,
   pcRichard,
   abercrombie,
   bestBuy,

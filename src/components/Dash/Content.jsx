@@ -1,6 +1,5 @@
 import AdBlock from "./AdBlock";
 import AdRow01 from "./AdRow01";
-import AdRow02 from "./AdRow02";
 import AdRow03 from "./AdRow03";
 import AdRow04 from "./AdRow04";
 import AdRow05 from "./AdRow05";
@@ -10,36 +9,36 @@ import {
   adRow05data001,
   adRow05data002,
   mockHref,
-  ourContentShop,
-  sports,
-  paidTopSpot,
-  bangUrBuck,
-  getYourBestBuy,
-  exploreTrends,
+  clothing,
+  jewelery,
+  sneakers,
+  beautyShops,
+  electronics,
+  supplements,
   activeGear,
-  exclusivePicks,
-  valueVault,
-  shopSmarter,
-  freshFinds,
-  gearUp,
-  premiumPicks,
-  dealHunters,
-  smartPicks,
-  topTrends,
-  adventureReady,
-  eliteChoices,
-  savvySavings,
-  brightBuys,
-  latestLooks,
-  outdoorEssentials,
-  premiumSelections,
-  budgetFinds,
-  smartChoices,
-  fashionForward,
-  inGear,
-  luxuryLines,
-  savingsSpotlight,
-  bestDeals,
+  movies,
+  giftCards,
+  luxuryShops,
+  justBoots,
+  justHats,
+  justDresses,
+  justJackets,
+  justSuits,
+  streamingServices,
+  ticketPlaces,
+  leagueShops,
+  bySportTeam,
+  popularSportTeams,
+  homeNecesities,
+  indoorHomeFans,
+  furnitureEssentials,
+  decorationsSupplies,
+  justCandles,
+  homeImprovement,
+  officeSuppliers,
+  kitchenSupplies,
+  rugs,
+  homeArt,
   pcRichard,
   abercrombie,
   bestBuy,
@@ -67,17 +66,11 @@ const Content = () => {
       />
 
       <BadgeSection
-        data={[ourContentShop, sports, paidTopSpot, bangUrBuck, getYourBestBuy]}
+        data={[clothing, jewelery, sneakers, beautyShops, electronics]}
       />
 
       <BadgeSection
-        data={[
-          exploreTrends,
-          activeGear,
-          exclusivePicks,
-          valueVault,
-          shopSmarter,
-        ]}
+        data={[supplements, activeGear, movies, giftCards, luxuryShops]}
       />
 
       <AdBlock
@@ -98,16 +91,16 @@ const Content = () => {
       />
 
       <BadgeSection
-        data={[freshFinds, gearUp, premiumPicks, dealHunters, smartPicks]}
+        data={[justBoots, justHats, justDresses, justJackets, justSuits]}
       />
 
       <BadgeSection
         data={[
-          topTrends,
-          adventureReady,
-          eliteChoices,
-          savvySavings,
-          brightBuys,
+          streamingServices,
+          ticketPlaces,
+          leagueShops,
+          bySportTeam,
+          popularSportTeams,
         ]}
       />
 
@@ -123,30 +116,30 @@ const Content = () => {
 
       <BadgeSection
         data={[
-          latestLooks,
-          outdoorEssentials,
-          premiumSelections,
-          budgetFinds,
-          smartChoices,
+          homeNecesities,
+          indoorHomeFans,
+          furnitureEssentials,
+          decorationsSupplies,
+          justCandles,
         ]}
       />
 
       <BadgeSection
         data={[
-          fashionForward,
-          inGear,
-          luxuryLines,
-          savingsSpotlight,
-          bestDeals,
+          homeImprovement,
+          officeSuppliers,
+          kitchenSupplies,
+          rugs,
+          homeArt,
         ]}
       />
       <BadgeSection
         data={[
-          fashionForward,
-          inGear,
-          luxuryLines,
-          savingsSpotlight,
-          bestDeals,
+          homeImprovement,
+          officeSuppliers,
+          kitchenSupplies,
+          rugs,
+          homeArt,
         ]}
       />
     </section>
