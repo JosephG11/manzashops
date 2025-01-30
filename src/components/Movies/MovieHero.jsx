@@ -1,6 +1,6 @@
 import { posters, sliderData } from "../../constants/Movies";
 import MoviePoster from "./MoviePoster";
-import MoviesImageSlider from "./MoviesImageSlider";
+import MovieImageSlider from "./MovieImageSlider";
 
 const {
   poster01: { src: poster01Src, alt: poster01alt },
@@ -11,7 +11,7 @@ const MovieHero = () => (
   <div className="flex flex-col lgc:flex-row w-full">
     <MoviePoster src={poster01Src} alt={poster01alt} styles="lgc:flex hidden" />
 
-    <MoviesImageSlider data={sliderData} />
+    <MovieImageSlider data={sliderData} />
 
     <div className="flex flex-col md:flex-row justify-around py-6 items-center gap-6">
       <MoviePoster

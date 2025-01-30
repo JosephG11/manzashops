@@ -1,6 +1,6 @@
 import React from "react";
 
-const MoviesImageSlider = ({ data }) => {
+const MovieImageSlider = ({ data }) => {
   return (
     <>
       <div className="relative w-full h-[50vh] 2xlc:h-[40vh]">
@@ -23,4 +23,4 @@ const MoviesImageSlider = ({ data }) => {
   );
 };
 
-export default MoviesImageSlider;
+export default MovieImageSlider;
