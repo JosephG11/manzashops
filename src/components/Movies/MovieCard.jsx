@@ -1,5 +1,3 @@
-import React from "react";
-
 const MovieCard = () => {
   return (
     <div className="size-full flex flex-col items-center bg-black p-4">

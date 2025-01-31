@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { listingSectionData } from "../../constants/Listings";
 import { movieLinks } from "../../constants/Movies";
 import MovieContentLeftSidebar from "./MovieContentLeftSidebar";
