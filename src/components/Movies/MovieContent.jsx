@@ -52,8 +52,15 @@ const MovieContent = () => {
           title="Trending - 20 list"
           links={movieLinks}
         />
+        <div className="size-full flex flex-col items-center bg-black p-4 gap-6 overflow-y-auto">
+          <MovieCard />
 
-        <MovieCard />
+          <MovieCard />
+
+          <MovieCard />
+
+          <MovieCard />
+        </div>
 
         <div className="w-[320px] bg-header shrink-0 p-4">
           <img
