@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { listingSectionData } from "../../constants/Listings";
 import { movieLinks } from "../../constants/Movies";
 import MovieContentLeftSidebar from "./MovieContentLeftSidebar";
+import MovieCard from "./MovieCard";
 
 const MovieContent = () => {
   const sections = listingSectionData.sections;
@@ -53,11 +54,7 @@ const MovieContent = () => {
           links={movieLinks}
         />
 
-        <div className="w-full bg-black flex flex-col items-center">
-          <div className="bg-secondary w-full p-4">
-            <div className="bg-white rounded-[10px] h-[350px]"></div>
-          </div>
-        </div>
+        <MovieCard />
 
         <div className="w-[320px] bg-header shrink-0 p-4">
           <img
