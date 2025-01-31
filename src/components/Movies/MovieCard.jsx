@@ -123,7 +123,11 @@ const MovieCard = () => {
       </div>
 
       <div className="flex bg-black rounded-[10px] h-[350px] w-[700px] border-[1px] border-white">
-        <img src={src} alt={alt} className="h-full rounded-[10px]" />
+        <img
+          src={src}
+          alt={alt}
+          className="h-full rounded-l-[10px] bg-header"
+        />
 
         <div className="flex flex-col justify-between w-full">
           <div className="bg-header rounded-tr-[10px] flex flex-col gap-6 size-full p-4">
@@ -166,7 +170,7 @@ const MovieCard = () => {
                 {activeId === title && (
                   <div
                     id={title}
-                    className="flex flex-col bg-white items-center rounded-[10px] relative top-1 pb-2 pt-5 px-3"
+                    className="flex flex-col bg-white items-center rounded-[10px] relative top-1 pb-2 pt-6 px-3"
                   >
                     <button
                       type="button"

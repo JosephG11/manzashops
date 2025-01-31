@@ -8,7 +8,7 @@ const {
 } = posters;
 
 const MovieHero = () => (
-  <div className="flex flex-col lgc:flex-row w-full">
+  <div className="flex flex-col lgc:flex-row w-full bg-black rounded-t-[10px]">
     <MoviePoster src={poster01Src} alt={poster01alt} styles="lgc:flex hidden" />
 
     <MovieImageSlider data={sliderData} />
@@ -23,7 +23,7 @@ const MovieHero = () => (
       <MoviePoster
         src={poster02Src}
         alt={poster02alt}
-        styles="flex lgc:hidden"
+        styles="flex lgc:hidden "
       />
     </div>
 

@@ -1,8 +1,11 @@
-const MovieContentLeftSidebar = ({ title, links }) => (
+const MovieContentLeftSidebar = ({ links }) => (
   <div className="flex xl:flex-col flex-row items-center xl:w-[320px] w-full bg-black shrink-0 xl:gap-4 gap-2">
     <div className="xl:w-full w-fit xl:pr-4 pr-0 xl:pl-4 pl-2 xl:pb-0 pb-2">
-      <p className="bg-header rounded-[10px] px-8 py-4 text-nowrap text-white">
-        {title}
+      <p className="bg-header hidden lg:flex rounded-[10px] px-8 py-4 text-nowrap text-white">
+        Trending - 20 list
+      </p>
+      <p className="bg-header lg:hidden flex rounded-[10px] px-8 py-4 text-nowrap text-white">
+        Trending
       </p>
     </div>
 

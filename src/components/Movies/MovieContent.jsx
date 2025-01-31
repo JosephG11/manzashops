@@ -32,7 +32,7 @@ const MovieContent = () => {
 
   return (
     <section className="flex flex-col">
-      <div className="flex items-center gap-2 justify-between bg-black border-[3px] border-black flex-nowrap sticky px-1 top-0 z-10 overflow-x-auto h-16">
+      <div className="flex items-center gap-1 justify-between bg-black border-[3px] border-black flex-nowrap sticky px-1 top-0 z-10 overflow-x-auto h-12">
         {sections?.map(({ id, sectionName }) => (
           <button
             key={id}
@@ -42,17 +42,14 @@ const MovieContent = () => {
               sectionName == activeSection ? "bg-secondary" : "bg-white"
             } rounded-[10px] flex w-fit justify-center items-center text-black hover:bg-secondary shrink-0`}
           >
-            <p className="capitalize text-xl px-3 py-1">{sectionName}</p>
+            <p className="capitalize text-base px-3 py-1">{sectionName}</p>
           </button>
         ))}
       </div>
 
       <div className="flex flex-col xl:flex-row w-full 2xlc:h-[70vh] xl:h-[80vh] h-full">
-        <MovieContentLeftSidebar
-          title="Trending - 20 list"
-          links={movieLinks}
-        />
-        <div className="size-full flex flex-col items-center bg-black p-4 gap-6 overflow-y-auto">
+        <MovieContentLeftSidebar links={movieLinks} />
+        <div className="h-[100vh] xl:h-full w-full flex flex-col items-center bg-black p-4 gap-6 overflow-y-auto">
           <MovieCard />
 
           <MovieCard />
@@ -62,11 +59,11 @@ const MovieContent = () => {
           <MovieCard />
         </div>
 
-        <div className="w-[320px] bg-header shrink-0 p-4">
+        <div className="xl:w-[320px] w-full bg-header shrink-0 p-4 flex justify-center">
           <img
             src="/manzashops/assets/ad/gttt1.png"
             alt="ad"
-            className="size-full "
+            className="xl:w-full xl:h-full h-[598.4px] w-[288px]"
           />
         </div>
       </div>
