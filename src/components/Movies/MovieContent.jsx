@@ -55,7 +55,7 @@ const MovieContent = () => {
             {activeSection}
           </p>
 
-          <div className=" flex flex-col items-center gap-6 overflow-y-auto">
+          <div className="flex flex-col items-center gap-6 h-full overflow-y-auto">
             {activeSectionData?.movieListings?.map((listing) => (
               <MovieCard key={listing.id} {...listing} />
             ))}
