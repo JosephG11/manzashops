@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { listingSectionData } from "../../constants/Listings";
+import { moviesSectionData } from "../../constants/Movies";
 import { movieLinks } from "../../constants/Movies";
 import MovieContentLeftSidebar from "./MovieContentLeftSidebar";
 import MovieCard from "./MovieCard";
 
 const MovieContent = () => {
-  const sections = listingSectionData.sections;
+  const sections = moviesSectionData;
   const firstSection = sections[0].sectionName;
 
   const [activeSection, setActiveSection] = useState(firstSection || "");
@@ -32,7 +32,7 @@ const MovieContent = () => {
 
   return (
     <section className="flex flex-col">
-      <div className="flex items-center gap-1 justify-between bg-black border-[3px] border-black flex-nowrap sticky px-1 top-0 z-10 overflow-x-auto h-12">
+      <div className="flex items-center gap-1 bg-black border-[3px] border-black flex-nowrap sticky px-1 top-0 z-10 overflow-x-auto h-12">
         {sections?.map(({ id, sectionName }) => (
           <button
             key={id}
@@ -49,14 +49,17 @@ const MovieContent = () => {
 
       <div className="flex flex-col xl:flex-row w-full 2xlc:h-[70vh] xl:h-[80vh] h-full">
         <MovieContentLeftSidebar links={movieLinks} />
-        <div className="h-[100vh] xl:h-full w-full flex flex-col items-center bg-black p-4 gap-6 overflow-y-auto">
-          <MovieCard />
 
-          <MovieCard />
+        <div className="h-[100vh] xl:h-full w-full flex flex-col bg-black gap-6 overflow-hidden">
+          <p className="text-white text-xl capitalize w-full leading-5 text-center pt-4">
+            {activeSection}
+          </p>
 
-          <MovieCard />
-
-          <MovieCard />
+          <div className=" flex flex-col items-center gap-6 overflow-y-auto">
+            {activeSectionData?.movieListings?.map((listing) => (
+              <MovieCard key={listing.id} {...listing} />
+            ))}
+          </div>
         </div>
 
         <div className="xl:w-[320px] w-full bg-header shrink-0 p-4 flex justify-center">
