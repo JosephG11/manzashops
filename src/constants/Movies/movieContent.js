@@ -1,5 +1,10 @@
 import section01Listings from "./sections/section01Listings";
 import section02Listings from "./sections/section02Listings";
+import section03Listings from "./sections/section03Listings";
+import section04Listings from "./sections/section04Listings";
+import section05Listings from "./sections/section05Listings";
+import section06Listings from "./sections/section06Listings";
+import section07Listings from "./sections/section07Listings";
 
 export const movieLinks = [
   {
@@ -55,29 +60,29 @@ export const moviesSectionData = [
     sectionName: "title-02",
     movieListings: section02Listings,
   },
-  // {
-  //   id: "sec0003",
-  //   sectionName: "title-03",
-  //   categories: section03Categories,
-  // },
-  // {
-  //   id: "sec0004",
-  //   sectionName: "title-04",
-  //   categories: section04Categories,
-  // },
-  // {
-  //   id: "sec0005",
-  //   sectionName: "title-05",
-  //   categories: section05Categories,
-  // },
-  // {
-  //   id: "sec0006",
-  //   sectionName: "title-06",
-  //   categories: section06Categories,
-  // },
-  // {
-  //   id: "sec0007",
-  //   sectionName: "title-07",
-  //   categories: section07Categories,
-  // },
+  {
+    id: "sec0003",
+    sectionName: "title-03",
+    movieListings: section03Listings,
+  },
+  {
+    id: "sec0004",
+    sectionName: "title-04",
+    movieListings: section04Listings,
+  },
+  {
+    id: "sec0005",
+    sectionName: "title-05",
+    movieListings: section05Listings,
+  },
+  {
+    id: "sec0006",
+    sectionName: "title-06",
+    movieListings: section06Listings,
+  },
+  {
+    id: "sec0007",
+    sectionName: "title-07",
+    movieListings: section07Listings,
+  },
 ];
