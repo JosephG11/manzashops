@@ -1,7 +1,7 @@
 const MovieImageSlider = ({ data }) => {
   return (
     <>
-      <div className="relative w-full h-[370px] md:h-[426px] lg:h-[55vh] 2xlc:h-[45vh]">
+      <div className="relative w-full h-[370px] md:h-[426px] xl:h-[55vh] 2xlc:h-[45vh]">
         <div className="flex w-full h-full overflow-x-auto">
           {data.map(({ id, href, src, styles }) => (
             <a key={id} href={href} className="w-full flex-shrink-0">
