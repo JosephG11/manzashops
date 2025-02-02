@@ -17,14 +17,14 @@ const MovieContent = () => {
   const handleSectionChange = (sectionName) => {
     setActiveSection(sectionName);
 
-    document.getElementById("listings-content")?.scrollIntoView({
+    document.getElementById("movies-content")?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
   };
 
   return (
-    <section className="flex flex-col">
+    <section id="movies-content" className="flex flex-col">
       <div className="flex items-center gap-1 bg-black border-[3px] border-black flex-nowrap sticky px-1 top-0 z-10 overflow-x-auto h-12">
         {sections?.map(({ id, sectionName }) => (
           <button
