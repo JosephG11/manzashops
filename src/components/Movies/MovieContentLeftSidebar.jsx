@@ -14,6 +14,8 @@ const MovieContentLeftSidebar = ({ links }) => (
         <a
           key={i}
           href={href}
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-header rounded-[10px] w-full px-8 py-4 flex justify-center items-center border-[1px] border-white hover:border-secondary text-white text-nowrap capitalize"
         >
           {label}

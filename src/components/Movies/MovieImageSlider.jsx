@@ -4,7 +4,13 @@ const MovieImageSlider = ({ data }) => {
       <div className="relative w-full h-[370px] md:h-[426px] xl:h-[55vh] 2xlc:h-[45vh]">
         <div className="flex w-full h-full overflow-x-auto">
           {data.map(({ id, href, src, styles }) => (
-            <a key={id} href={href} className="w-full flex-shrink-0">
+            <a
+              key={id}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex-shrink-0"
+            >
               <img
                 src={src}
                 className={`w-[171vh] h-full object-fit rounded-[10px] shadow-[10px_10px_10px_black] ${styles}`}

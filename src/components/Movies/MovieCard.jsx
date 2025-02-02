@@ -7,7 +7,6 @@ const MovieCard = ({
   movieTitle,
   movieDate,
   movieDescription,
-  ticketsLink,
   buttons,
 }) => {
   const [activeId, setActiveId] = useState(null);
