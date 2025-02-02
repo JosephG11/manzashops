@@ -12,7 +12,7 @@ const MovieCard = ({
 }) => {
   const [activeId, setActiveId] = useState(null);
 
-  const ticketsData = buttons.find((button) => button.title == "tickets");
+  const ticketButton = buttons.find((button) => button.title == "tickets");
 
   const toggleById = (id) => {
     setActiveId((prevId) => (prevId === id ? null : id));
@@ -77,16 +77,16 @@ const MovieCard = ({
               <div className="flex w-full justify-center items-center">
                 <button
                   type="button"
-                  onClick={() => toggleById(ticketsData.title)}
+                  onClick={() => toggleById(ticketButton.title)}
                   className="bg-red-500 text-white rounded-[10px] px-4 py-2 w-28 sm:w-48 xs:w-36 h-10 text-center"
                 >
                   Tickets
                 </button>
 
-                {activeId === ticketsData.title && (
+                {activeId === ticketButton.title && (
                   <MovieLinksCard
-                    title={ticketsData.title}
-                    links={ticketsData.links}
+                    title={ticketButton.title}
+                    links={ticketButton.links}
                     toggleById={toggleById}
                   />
                 )}
