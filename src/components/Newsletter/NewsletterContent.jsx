@@ -54,7 +54,7 @@ const NewsletterContent = () => {
             {activeSection}
           </p>
 
-          <div className="flex flex-col items-center gap-6 h-full overflow-y-auto">
+          <div className="flex flex-col items-center gap-8 h-full overflow-y-auto">
             {activeSectionData?.movieListings?.map((listing) => (
               <NewsletterCard key={listing.id} {...listing} />
             ))}

@@ -2,7 +2,7 @@ const section01Listings = [
   {
     id: "ml00001",
     image: {
-      src: "/manzashops/assets/ad/movie24.jpeg",
+      src: "/manzashops/assets/cover1.png",
       alt: "Witch Poster",
     },
     listingDate: {
@@ -10,8 +10,8 @@ const section01Listings = [
       day: "10",
       year: "2024",
     },
-    movieTitle: "Witch",
-    movieDate: "October 4, 2024",
+    movieTitle: "Joseph Gonzalez",
+    movieDate: "H&W",
     movieDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel turpis at nulla tincidunt sodales. Integer tincidunt, sapien id volutpat tincidunt, libero sapien suscipit nisl, eget fermentum justo lorem in urna. Aliquam erat volutpat. Vestibulum ut libero ac sapien venenatis sagittis non nec quam. Curabitur euismod, nulla at pharetra auctor, nisi turpis vehicula justo, ac scelerisque mauris erat id turpis.",
     ticketsLink: "/",
