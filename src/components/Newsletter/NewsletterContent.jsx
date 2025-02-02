@@ -2,6 +2,7 @@ import { useState } from "react";
 import { articleSectionData, articleLinks } from "../../constants/Newsletter";
 import NewsletterContentLeftSidebar from "./NewsletterContentLeftSidebar";
 import NewsletterCard from "./NewsletterCard";
+import ScrollToTop from "../ScrollToTop";
 
 const NewsletterContent = () => {
   const sections = articleSectionData;
@@ -25,6 +26,8 @@ const NewsletterContent = () => {
   return (
     <section id="newsletter-content" className="flex flex-col">
       <div className="flex items-center gap-1 bg-black border-[3px] border-black flex-nowrap sticky px-1 top-0 z-10 overflow-x-auto h-12">
+        <ScrollToTop arrowStyles={"size-[30px]"} />
+
         {sections?.map(({ id, sectionName }) => (
           <button
             key={id}

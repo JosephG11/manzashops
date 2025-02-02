@@ -2,6 +2,7 @@ import { useState } from "react";
 import { moviesSectionData, movieLinks } from "../../constants/Movies";
 import MovieContentLeftSidebar from "./MovieContentLeftSidebar";
 import MovieCard from "./MovieCard";
+import ScrollToTop from "../ScrollToTop";
 
 const MovieContent = () => {
   const sections = moviesSectionData;
@@ -25,6 +26,8 @@ const MovieContent = () => {
   return (
     <section id="movies-content" className="flex flex-col">
       <div className="flex items-center gap-1 bg-black border-[3px] border-black flex-nowrap sticky px-1 top-0 z-10 overflow-x-auto h-12">
+        <ScrollToTop arrowStyles={"size-[30px]"} />
+
         {sections?.map(({ id, sectionName }) => (
           <button
             key={id}
@@ -47,7 +50,7 @@ const MovieContent = () => {
             {activeSection}
           </p>
 
-          <div className="flex flex-col items-center gap-6 h-full overflow-y-auto">
+          <div className="flex flex-col items-center gap-8 h-full overflow-y-auto">
             {activeSectionData?.movieListings?.map((listing) => (
               <MovieCard key={listing.id} {...listing} />
             ))}
