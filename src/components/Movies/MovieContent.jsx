@@ -60,6 +60,7 @@ const MovieContent = () => {
             src="/manzashops/assets/ad/gttt1.png"
             alt="ad"
             className="xl:w-full xl:h-full h-[598.4px] w-[288px]"
+            loading="lazy"
           />
         </div>
       </div>

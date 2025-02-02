@@ -8,6 +8,7 @@ const MovieImageSlider = ({ data }) => {
               <img
                 src={src}
                 className={`w-[171vh] h-full object-fit rounded-[10px] shadow-[10px_10px_10px_black] ${styles}`}
+                loading="lazy"
               />
             </a>
           ))}

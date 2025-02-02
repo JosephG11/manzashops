@@ -30,6 +30,7 @@ const MovieCard = ({
             src={src}
             alt={alt}
             className="md:h-full h-[300px] md:min-w-[234.5px] w-[200px] rounded-l-0 md:rounded-l-[10px] bg-header"
+            loading="lazy"
           />
         </div>
 
