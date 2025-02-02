@@ -77,7 +77,7 @@ const MovieCard = ({
                 <button
                   type="button"
                   onClick={() => toggleById(ticketButton.title)}
-                  className="bg-red-500 text-white rounded-[10px] px-4 py-2 w-28 sm:w-48 xs:w-36 h-10 text-center"
+                  className="bg-red-500 hover:bg-red-600 text-white text-lg flex items-center justify-center rounded-[10px] px-4 py-2 w-28 sm:w-48 xs:w-36 h-10"
                 >
                   Tickets
                 </button>
@@ -103,7 +103,7 @@ const MovieCard = ({
                 <button
                   type="button"
                   onClick={() => toggleById(title)}
-                  className="bg-white text-black rounded-[10px] text-sm sm:text-base px-4 py-2 w-24 sm:w-32 h-10 text-center capitalize"
+                  className="bg-white hover:bg-gray-300 text-black rounded-[10px] text-sm sm:text-base px-4 py-2 w-24 sm:w-32 h-10 text-center capitalize"
                 >
                   {title}
                 </button>
