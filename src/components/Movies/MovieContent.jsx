@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { moviesSectionData } from "../../constants/Movies";
 import { movieLinks } from "../../constants/Movies";
 import MovieContentLeftSidebar from "./MovieContentLeftSidebar";
@@ -9,17 +9,10 @@ const MovieContent = () => {
   const firstSection = sections[0].sectionName;
 
   const [activeSection, setActiveSection] = useState(firstSection || "");
-  const [localSections, setLocalSections] = useState(sections || []);
 
-  const activeSectionData = localSections?.filter(
+  const activeSectionData = sections?.find(
     ({ sectionName }) => sectionName === activeSection
-  )[0];
-
-  useEffect(() => {
-    if (sections) {
-      setLocalSections(sections);
-    }
-  }, [sections]);
+  );
 
   const handleSectionChange = (sectionName) => {
     setActiveSection(sectionName);
