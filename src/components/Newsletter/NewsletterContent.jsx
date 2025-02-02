@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { articleSectionData, articleLinks } from "../../constants/Newsletter";
 import NewsletterContentLeftSidebar from "./NewsletterContentLeftSidebar";
 import NewsletterCard from "./NewsletterCard";
@@ -8,29 +8,22 @@ const NewsletterContent = () => {
   const firstSection = sections[0].sectionName;
 
   const [activeSection, setActiveSection] = useState(firstSection || "");
-  const [localSections, setLocalSections] = useState(sections || []);
 
-  const activeSectionData = localSections?.filter(
+  const activeSectionData = sections?.find(
     ({ sectionName }) => sectionName === activeSection
-  )[0];
-
-  useEffect(() => {
-    if (sections) {
-      setLocalSections(sections);
-    }
-  }, [sections]);
+  );
 
   const handleSectionChange = (sectionName) => {
     setActiveSection(sectionName);
 
-    document.getElementById("listings-content")?.scrollIntoView({
+    document.getElementById("newsletter-content")?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
   };
 
   return (
-    <section className="flex flex-col">
+    <section id="newsletter-content" className="flex flex-col">
       <div className="flex items-center gap-1 bg-black border-[3px] border-black flex-nowrap sticky px-1 top-0 z-10 overflow-x-auto h-12">
         {sections?.map(({ id, sectionName }) => (
           <button

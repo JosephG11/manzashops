@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { moviesSectionData } from "../../constants/Movies";
-import { movieLinks } from "../../constants/Movies";
+import { moviesSectionData, movieLinks } from "../../constants/Movies";
 import MovieContentLeftSidebar from "./MovieContentLeftSidebar";
 import MovieCard from "./MovieCard";
 
