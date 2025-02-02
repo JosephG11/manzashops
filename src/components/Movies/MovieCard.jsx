@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { RxCross1 } from "react-icons/rx";
+import { useEffect, useState } from "react";
+import MovieLinksCard from "./MovieLinksCard";
 
 const MovieCard = ({
   image: { src, alt },
@@ -12,9 +12,37 @@ const MovieCard = ({
 }) => {
   const [activeId, setActiveId] = useState(null);
 
+  const ticketsData = buttons.find((button) => button.title == "tickets");
+
   const toggleById = (id) => {
     setActiveId((prevId) => (prevId === id ? null : id));
   };
+
+  useEffect(() => {
+    const handleScrollLock = () => {
+      if (activeId) {
+        const scrollbarWidth =
+          window.innerWidth - document.documentElement.clientWidth;
+
+        // Disable scrolling
+        document.body.style.overflow = "hidden";
+
+        // Compensate for scrollbar disappearance to avoid layout shift
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+      } else {
+        // Re-enable scrolling
+        document.body.style.overflow = "";
+        document.body.style.paddingRight = "";
+      }
+    };
+
+    handleScrollLock();
+
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    };
+  }, [activeId]);
 
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-2 lg:gap-0">
@@ -47,12 +75,21 @@ const MovieCard = ({
               </div>
 
               <div className="flex w-full justify-center items-center">
-                <a
-                  href={ticketsLink}
+                <button
+                  type="button"
+                  onClick={() => toggleById(ticketsData.title)}
                   className="bg-red-500 text-white rounded-[10px] px-4 py-2 w-28 sm:w-48 xs:w-36 h-10 text-center"
                 >
                   Tickets
-                </a>
+                </button>
+
+                {activeId === ticketsData.title && (
+                  <MovieLinksCard
+                    title={ticketsData.title}
+                    links={ticketsData.links}
+                    toggleById={toggleById}
+                  />
+                )}
               </div>
             </div>
 
@@ -73,29 +110,11 @@ const MovieCard = ({
                 </button>
 
                 {activeId === title && (
-                  <div
-                    id={title}
-                    className="flex flex-col bg-white items-center rounded-[10px] relative top-1 pb-2 pt-6 px-3"
-                  >
-                    <button
-                      type="button"
-                      onClick={() => toggleById(title)}
-                      className="absolute right-2 top-2"
-                    >
-                      <RxCross1 />
-                    </button>
-                    {links.map(({ title, href }) => (
-                      <a
-                        key={title}
-                        href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="capitalize"
-                      >
-                        {title}
-                      </a>
-                    ))}
-                  </div>
+                  <MovieLinksCard
+                    title={title}
+                    links={links}
+                    toggleById={toggleById}
+                  />
                 )}
               </div>
             ))}
