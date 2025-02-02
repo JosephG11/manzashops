@@ -53,36 +53,36 @@ export const articleSectionData = [
   {
     id: "sec0001",
     sectionName: "title-01",
-    movieListings: section01Listings,
+    articleListings: section01Listings,
   },
   {
     id: "sec0002",
     sectionName: "title-02",
-    movieListings: section02Listings,
+    articleListings: section02Listings,
   },
   {
     id: "sec0003",
     sectionName: "title-03",
-    movieListings: section03Listings,
+    articleListings: section03Listings,
   },
   {
     id: "sec0004",
     sectionName: "title-04",
-    movieListings: section04Listings,
+    articleListings: section04Listings,
   },
   {
     id: "sec0005",
     sectionName: "title-05",
-    movieListings: section05Listings,
+    articleListings: section05Listings,
   },
   {
     id: "sec0006",
     sectionName: "title-06",
-    movieListings: section06Listings,
+    articleListings: section06Listings,
   },
   {
     id: "sec0007",
     sectionName: "title-07",
-    movieListings: section07Listings,
+    articleListings: section07Listings,
   },
 ];

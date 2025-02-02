@@ -1,193 +1,41 @@
 const section01Listings = [
   {
-    id: "ml00001",
+    id: "al00001",
     image: {
       src: "/manzashops/assets/cover1.png",
-      alt: "Witch Poster",
+      alt: "Article image",
     },
-    listingDate: {
+    title: "Some other title",
+    date: {
       month: "Dec",
       day: "10",
       year: "2024",
     },
-    movieTitle: "Joseph Gonzalez",
-    movieDate: "H&W",
-    movieDescription:
+    author: "Joseph Gonzalez",
+    type: "H&W",
+    description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel turpis at nulla tincidunt sodales. Integer tincidunt, sapien id volutpat tincidunt, libero sapien suscipit nisl, eget fermentum justo lorem in urna. Aliquam erat volutpat. Vestibulum ut libero ac sapien venenatis sagittis non nec quam. Curabitur euismod, nulla at pharetra auctor, nisi turpis vehicula justo, ac scelerisque mauris erat id turpis.",
-    ticketsLink: "/",
-    buttons: [
-      {
-        title: "trailers",
-        links: [
-          {
-            title: "fandango",
-            href: "https://Fandango.com",
-          },
-          {
-            title: "Atom tickets",
-            href: "https://atomtickets.com",
-          },
-          {
-            title: "alpine Cinema",
-            href: "https://alpinecinema.com",
-          },
-          {
-            title: "AMC",
-            href: "https://amctheatres.com",
-          },
-          {
-            title: "Regal",
-            href: "https://regmovies.com",
-          },
-        ],
-      },
-      {
-        title: "tickets",
-        links: [
-          {
-            title: "Atom tickets",
-            href: "https://atomtickets.com",
-          },
-          {
-            title: "alpine Cinema",
-            href: "https://alpinecinema.com",
-          },
-          {
-            title: "fandango",
-            href: "https://Fandango.com",
-          },
-
-          {
-            title: "AMC",
-            href: "https://amctheatres.com",
-          },
-          {
-            title: "Regal",
-            href: "https://regmovies.com",
-          },
-        ],
-      },
-      {
-        title: "resources",
-        links: [
-          {
-            title: "alpine Cinema",
-            href: "https://alpinecinema.com",
-          },
-          {
-            title: "AMC",
-            href: "https://amctheatres.com",
-          },
-          {
-            title: "Regal",
-            href: "https://regmovies.com",
-          },
-          {
-            title: "fandango",
-            href: "https://Fandango.com",
-          },
-          {
-            title: "Atom tickets",
-            href: "https://atomtickets.com",
-          },
-        ],
-      },
-    ],
+    source: "The Guardian",
+    time: "11:37 PM",
   },
   {
-    id: "ml00002",
+    id: "al00002",
     image: {
-      src: "/manzashops/assets/ad/movie31.jpeg",
-      alt: "Deadpool Poster",
+      src: "/manzashops/assets/cover1.png",
+      alt: "Article image",
     },
-    listingDate: {
+    title: "A step forward",
+    date: {
       month: "Dec",
-      day: "15",
+      day: "13",
       year: "2024",
     },
-    movieTitle: "deadpool",
-    movieDate: "October 23, 2024",
-    movieDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel turpis at nulla tincidunt sodales. Integer tincidunt, sapien id volutpat tincidunt, libero sapien suscipit nisl, eget fermentum justo lorem in urna. Aliquam erat volutpat. Vestibulum ut libero ac sapien venenatis sagittis non nec quam. Curabitur euismod, nulla at pharetra auctor, nisi turpis vehicula justo, ac scelerisque mauris erat id turpis.",
-    ticketsLink: "/",
-    buttons: [
-      {
-        title: "trailers",
-        links: [
-          {
-            title: "fandango",
-            href: "https://Fandango.com",
-          },
-          {
-            title: "Atom tickets",
-            href: "https://atomtickets.com",
-          },
-          {
-            title: "alpine Cinema",
-            href: "https://alpinecinema.com",
-          },
-          {
-            title: "AMC",
-            href: "https://amctheatres.com",
-          },
-          {
-            title: "Regal",
-            href: "https://regmovies.com",
-          },
-        ],
-      },
-      {
-        title: "tickets",
-        links: [
-          {
-            title: "Atom tickets",
-            href: "https://atomtickets.com",
-          },
-          {
-            title: "alpine Cinema",
-            href: "https://alpinecinema.com",
-          },
-          {
-            title: "fandango",
-            href: "https://Fandango.com",
-          },
-
-          {
-            title: "AMC",
-            href: "https://amctheatres.com",
-          },
-          {
-            title: "Regal",
-            href: "https://regmovies.com",
-          },
-        ],
-      },
-      {
-        title: "resources",
-        links: [
-          {
-            title: "alpine Cinema",
-            href: "https://alpinecinema.com",
-          },
-          {
-            title: "AMC",
-            href: "https://amctheatres.com",
-          },
-          {
-            title: "Regal",
-            href: "https://regmovies.com",
-          },
-          {
-            title: "fandango",
-            href: "https://Fandango.com",
-          },
-          {
-            title: "Atom tickets",
-            href: "https://atomtickets.com",
-          },
-        ],
-      },
-    ],
+    author: "Pete Green",
+    type: "Insite",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel turpis at nulla tincidunt sodales. Integer tincidunt, sapien id volutpat tincidunt, libero sapien suscipit nisl, eget fermentum justo lorem in urna. Aliquam erat volutpat. Vestibulum ut libero ac sapien venenatis sagittis non nec quam. Curabitur euismod, nulla at pharetra auctor, nisi turpis vehicula justo, ac scelerisque mauris erat id turpis. Aliquam erat volutpat. Vestibulum ut libero ac sapien venenatis sagittis non nec quam. Curabitur euismod, nulla at pharetra auctor, nisi turpis vehicula justo, ac scelerisque mauris erat id turpis.",
+    source: "The Guardian",
+    time: "1:15 PM",
   },
 ];
 
