@@ -25,15 +25,15 @@ export const sliderData = [
   },
 ];
 
-export const posters = {
-  poster01: {
+export const heroImages = {
+  image01: {
     href: "",
-    src: "/manzashops/assets/ad/movie24.jpeg",
-    alt: "test",
+    src: "",
+    alt: "Left Image",
   },
-  poster02: {
+  image02: {
     href: "",
-    src: "/manzashops/assets/ad/movie31.jpeg",
-    alt: "test",
+    src: "",
+    alt: "Right Image",
   },
 };

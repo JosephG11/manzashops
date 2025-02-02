@@ -1,7 +1,11 @@
+import NewsletterContent from "../components/Newsletter/NewsletterContent";
+import NewsletterHero from "../components/Newsletter/NewsletterHero";
+
 const Newsletter = () => {
   return (
-    <section className="h-[50vh] flex justify-center items-center">
-      Newsletter
+    <section className="w-full">
+      <NewsletterHero />
+      <NewsletterContent />
     </section>
   );
 };
