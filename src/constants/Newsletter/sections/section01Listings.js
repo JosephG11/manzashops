@@ -17,6 +17,7 @@ const section01Listings = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel turpis at nulla tincidunt sodales. Integer tincidunt, sapien id volutpat tincidunt, libero sapien suscipit nisl, eget fermentum justo lorem in urna. Aliquam erat volutpat. Vestibulum ut libero ac sapien venenatis sagittis non nec quam. Curabitur euismod, nulla at pharetra auctor, nisi turpis vehicula justo, ac scelerisque mauris erat id turpis.",
     source: "The Guardian",
     time: "11:37 PM",
+    href: "https://www.nytimes.com/",
   },
   {
     id: "al00002",
@@ -36,6 +37,7 @@ const section01Listings = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel turpis at nulla tincidunt sodales. Integer tincidunt, sapien id volutpat tincidunt, libero sapien suscipit nisl, eget fermentum justo lorem in urna. Aliquam erat volutpat. Vestibulum ut libero ac sapien venenatis sagittis non nec quam. Curabitur euismod, nulla at pharetra auctor, nisi turpis vehicula justo, ac scelerisque mauris erat id turpis. Aliquam erat volutpat. Vestibulum ut libero ac sapien venenatis sagittis non nec quam. Curabitur euismod, nulla at pharetra auctor, nisi turpis vehicula justo, ac scelerisque mauris erat id turpis.",
     source: "The Guardian",
     time: "1:15 PM",
+    href: "https://www.nytimes.com/",
   },
 ];
 

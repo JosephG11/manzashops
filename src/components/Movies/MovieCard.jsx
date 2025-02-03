@@ -51,7 +51,7 @@ const MovieCard = ({
         <p className="text-center text-sm text-white">{year}</p>
       </div>
 
-      <div className="flex flex-col md:flex-row bg-black rounded-[10px] h-fit md:h-[350px] w-[90%] md:w-[700px] border-[1px] border-white">
+      <div className="flex flex-col md:flex-row bg-black rounded-[10px] h-fit md:h-[350px] w-[90%] md:w-[700px] border-[1px] border-white hover:border-secondary">
         <div className="flex justify-center">
           <img
             src={src}

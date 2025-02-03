@@ -7,6 +7,7 @@ const NewsletterCard = ({
   description,
   source,
   time,
+  href,
 }) => {
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start w-[90%] md:w-fit  gap-2 lg:gap-0">
@@ -17,13 +18,18 @@ const NewsletterCard = ({
       </div>
 
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col bg-header rounded-[10px] h-fit md:h-[340px] w-full md:w-[700px]">
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col bg-header rounded-[10px] h-fit md:h-[340px] w-full md:w-[700px] border-[1px] border-white hover:border-secondary"
+        >
           <div className="w-full flex flex-col md:flex-row">
-            <div className="flex w-full  justify-center">
+            <div className="flex md:justify-start justify-center">
               <img
                 src={src}
                 alt={alt}
-                className="h-[240px] md:h-[180px] md:min-w-[280px] w-full rounded-tl-[10px] rounded-tr-[10px]  md:rounded-tr-[0px]"
+                className="h-[240px] md:h-[180px] md:min-w-[280px] md:w-[200px] w-full rounded-tl-[10px] rounded-tr-[10px]  md:rounded-tr-[0px]"
                 loading="lazy"
               />
             </div>
@@ -50,7 +56,7 @@ const NewsletterCard = ({
           <div className="w-full overflow-y-auto pt-1 pb-2 px-4">
             <p className="text-white">{description}</p>
           </div>
-        </div>
+        </a>
 
         <div className="flex justify-end pr-6">
           <div className="bg-header text-white text-lg flex justify-between px-2 w-64">
