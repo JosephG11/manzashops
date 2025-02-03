@@ -28,12 +28,12 @@ export const sliderData = [
 export const heroImages = {
   image01: {
     href: "",
-    src: "",
+    src: "/manzashops/assets/ad/urad2.png",
     alt: "Left Image",
   },
   image02: {
     href: "",
-    src: "",
+    src: "/manzashops/assets/ad/urad2.png",
     alt: "Right Image",
   },
 };
