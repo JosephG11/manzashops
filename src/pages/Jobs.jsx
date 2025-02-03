@@ -1,5 +1,6 @@
 import JobsSection from "../components/Jobs/JobsSection";
 import JobsSuggestions from "../components/Jobs/JobsSuggestions";
+import JobsHero from "../components/Jobs/JobsHero";
 import {
   adSectionData01,
   adSectionData02,
@@ -12,6 +13,8 @@ import {
 const Jobs = () => {
   return (
     <section className="bg-white w-full">
+      <JobsHero />
+
       <JobsSuggestions />
 
       <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">

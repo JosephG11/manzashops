@@ -1,5 +1,6 @@
 import MenusSection from "../components/Menus/MenusSection";
 import MenusSuggestions from "../components/Menus/MenusSuggestions";
+import MenusHero from "../components/Menus/MenusHero";
 import {
   adSectionData01,
   adSectionData02,
@@ -12,6 +13,8 @@ import {
 const Menus = () => {
   return (
     <section className="bg-white w-full">
+      <MenusHero />
+
       <MenusSuggestions />
 
       <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">
