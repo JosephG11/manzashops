@@ -1,6 +1,6 @@
-import MenusHero from "../components/Menus/MenusHero";
 import MenusSection from "../components/Menus/MenusSection";
 import MenusSuggestions from "../components/Menus/MenusSuggestions";
+import MenusHero from "../components/Menus/MenusHero";
 import {
   adSectionData01,
   adSectionData02,

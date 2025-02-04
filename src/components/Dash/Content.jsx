@@ -1,6 +1,5 @@
 import AdBlock from "./AdBlock";
 import AdRow01 from "./AdRow01";
-import AdRow02 from "./AdRow02";
 import AdRow03 from "./AdRow03";
 import AdRow04 from "./AdRow04";
 import AdRow05 from "./AdRow05";
@@ -10,36 +9,36 @@ import {
   adRow05data001,
   adRow05data002,
   mockHref,
-  ourContentShop,
-  sports,
-  paidTopSpot,
-  bangUrBuck,
-  getYourBestBuy,
-  exploreTrends,
+  clothing,
+  jewelery,
+  sneakers,
+  beautyShops,
+  electronics,
+  supplements,
   activeGear,
-  exclusivePicks,
-  valueVault,
-  shopSmarter,
-  freshFinds,
-  gearUp,
-  premiumPicks,
-  dealHunters,
-  smartPicks,
-  topTrends,
-  adventureReady,
-  eliteChoices,
-  savvySavings,
-  brightBuys,
-  latestLooks,
-  outdoorEssentials,
-  premiumSelections,
-  budgetFinds,
-  smartChoices,
-  fashionForward,
-  inGear,
-  luxuryLines,
-  savingsSpotlight,
-  bestDeals,
+  movies,
+  giftCards,
+  luxuryShops,
+  justBoots,
+  justHats,
+  justDresses,
+  justJackets,
+  justSuits,
+  streamingServices,
+  ticketPlaces,
+  leagueShops,
+  bySportTeam,
+  popularSportTeams,
+  homeNecesities,
+  indoorHomeFans,
+  furnitureEssentials,
+  decorationsSupplies,
+  justCandles,
+  homeImprovement,
+  officeSuppliers,
+  kitchenSupplies,
+  rugs,
+  homeArt,
   pcRichard,
   abercrombie,
   bestBuy,
@@ -51,8 +50,6 @@ import { cvsl } from "../../constants/Dash/topBadges/cvs11/badge";
 import { target } from "../../constants/Dash/topBadges/target/badge";
 import { macys } from "../../constants/Dash/topBadges/macys/badge";
 
-
-
 const Content = () => {
   return (
     <section className="flex items-center flex-col lg:gap-28 gap-10 bg-[#121212] lg:py-28 py-10">
@@ -60,37 +57,20 @@ const Content = () => {
         ads={
           <>
             <AdRow01 data={adRow1data001} />
-
-            <AdRow02
-              ad1Href={mockHref}
-              ad1Src={"/manzashops/assets/ad/target2.jpeg"}
-              ad1Alt={"target2"}
-              ad2Path={"listings"}
-              ad2Src={"/manzashops/assets/ad/YouTube Thumbnail-1 6.png"}
-              ad2Alt={"Listings"}
-            />
           </>
         }
       />
 
       <TopBadges
-        data={[ cvsl, pcRichard, visor, target, abercrombie, bestBuy, macys, ]}
-      />
-
-
-
-      <BadgeSection
-        data={[ ourContentShop, sports, paidTopSpot, bangUrBuck, getYourBestBuy,]}
+        data={[cvsl, pcRichard, visor, target, abercrombie, bestBuy, macys]}
       />
 
       <BadgeSection
-        data={[
-          exploreTrends,
-          activeGear,
-          exclusivePicks,
-          valueVault,
-          shopSmarter,
-        ]}
+        data={[clothing, jewelery, sneakers, beautyShops, electronics]}
+      />
+
+      <BadgeSection
+        data={[supplements, activeGear, movies, giftCards, luxuryShops]}
       />
 
       <AdBlock
@@ -110,19 +90,17 @@ const Content = () => {
         }
       />
 
-
-
       <BadgeSection
-        data={[freshFinds, gearUp, premiumPicks, dealHunters, smartPicks]}
+        data={[justBoots, justHats, justDresses, justJackets, justSuits]}
       />
 
       <BadgeSection
         data={[
-          topTrends,
-          adventureReady,
-          eliteChoices,
-          savvySavings,
-          brightBuys,
+          streamingServices,
+          ticketPlaces,
+          leagueShops,
+          bySportTeam,
+          popularSportTeams,
         ]}
       />
 
@@ -138,30 +116,30 @@ const Content = () => {
 
       <BadgeSection
         data={[
-          latestLooks,
-          outdoorEssentials,
-          premiumSelections,
-          budgetFinds,
-          smartChoices,
+          homeNecesities,
+          indoorHomeFans,
+          furnitureEssentials,
+          decorationsSupplies,
+          justCandles,
         ]}
       />
 
       <BadgeSection
         data={[
-          fashionForward,
-          inGear,
-          luxuryLines,
-          savingsSpotlight,
-          bestDeals,
+          homeImprovement,
+          officeSuppliers,
+          kitchenSupplies,
+          rugs,
+          homeArt,
         ]}
       />
       <BadgeSection
         data={[
-          fashionForward,
-          inGear,
-          luxuryLines,
-          savingsSpotlight,
-          bestDeals,
+          homeImprovement,
+          officeSuppliers,
+          kitchenSupplies,
+          rugs,
+          homeArt,
         ]}
       />
     </section>

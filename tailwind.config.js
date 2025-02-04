@@ -12,6 +12,11 @@ export default {
       fontFamily: {
         sans: ["Times New Roman", "serif"],
       },
+      screens: {
+        xs: "370px",
+        lgc: "1210px",
+        "2xlc": "1610px",
+      },
     },
   },
   plugins: [],

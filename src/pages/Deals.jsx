@@ -1,6 +1,6 @@
-import DealsHero from "../components/Deals/DealsHero";
 import DealsSection from "../components/Deals/DealsSection";
 import DealsSuggestions from "../components/Deals/DealsSuggestions";
+import DealsHero from "../components/Deals/DealsHero";
 import {
   adSectionData01,
   adSectionData02,

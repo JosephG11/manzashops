@@ -1,6 +1,6 @@
-import JobsHero from "../components/Jobs/JobsHero";
 import JobsSection from "../components/Jobs/JobsSection";
 import JobsSuggestions from "../components/Jobs/JobsSuggestions";
+import JobsHero from "../components/Jobs/JobsHero";
 import {
   adSectionData01,
   adSectionData02,

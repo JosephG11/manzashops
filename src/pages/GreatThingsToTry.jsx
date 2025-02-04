@@ -1,6 +1,6 @@
-import GtttHero from "../components/GreatThingsToTry/GtttHero";
 import GtttSection from "../components/GreatThingsToTry/GtttSection";
 import GtttSuggestions from "../components/GreatThingsToTry/GtttSuggestions";
+import GtttHero from "../components/GreatThingsToTry/GtttHero";
 import {
   adSectionData01,
   adSectionData02,

@@ -4,10 +4,17 @@ const HeroImageSlider = ({ data }) => {
       <div className="relative flex-1">
         <div className="flex w-full lg:h-[60vh] h-[40vh] sm:h-full overflow-x-auto">
           {data.map(({ id, href, src, styles }) => (
-            <a key={id} href={href} className="w-full flex-shrink-0">
+            <a
+              key={id}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={href}
+              className="w-full flex-shrink-0"
+            >
               <img
                 src={src}
                 className={`w-[171vh] h-full object-fit rounded-[10px] shadow-[10px_10px_10px_black] ${styles}`}
+                loading="lazy"
               />
             </a>
           ))}

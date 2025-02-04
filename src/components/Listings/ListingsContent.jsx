@@ -17,10 +17,6 @@ const ListingsContent = () => {
   const categoryRefs = useRef({});
 
   useEffect(() => {
-    console.log("Category refs:", categoryRefs.current);
-  }, [activeSection]);
-
-  useEffect(() => {
     if (sections) {
       setLocalSections(sections);
     }
