@@ -12,7 +12,7 @@ const NewsletterCard = ({
   time,
   href,
   outsideLink,
-  id,
+  articleId,
 }) => {
   const cardProps = { src, alt, title, type, author, description, href };
 
@@ -36,7 +36,7 @@ const NewsletterCard = ({
           </a>
         ) : (
           <Link
-            to={`/manzashops/newsletter/articles/${id}`}
+            to={`/manzashops/newsletter/articles/${articleId}`}
             className="flex h-fit w-full flex-col rounded-[10px] border-[1px] border-white bg-header hover:border-secondary md:h-[340px] md:w-[700px]"
           >
             <NewsletterCardContent {...cardProps} />

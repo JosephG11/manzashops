@@ -1,9 +1,16 @@
 import { useParams } from 'react-router';
+import { articles } from '../constants/Article';
 
 const Article = () => {
-  const { id } = useParams();
+  const { articleId } = useParams();
 
-  return <section className="flex h-[50vh] items-center justify-center">Article {id}</section>;
+  const { id, heroImage, businessLinks, referenceLinks, adImage, article } = articles.find(
+    (article) => article.id === articleId,
+  );
+
+  console.log('data: ', id, heroImage, businessLinks, referenceLinks, adImage, article);
+
+  return <section className="w-full">{articleId}</section>;
 };
 
 export default Article;
