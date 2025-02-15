@@ -11,6 +11,7 @@ import Movies from './pages/Movies';
 import Newsletter from './pages/Newsletter';
 import GreatThingsToTry from './pages/GreatThingsToTry';
 import Listings from './pages/Listings';
+import Article from './pages/Article';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="menus" element={<Menus />} />
         <Route path="movies" element={<Movies />} />
         <Route path="newsletter" element={<Newsletter />} />
+        <Route path="newsletter/articles/:id" element={<Article />} />
         <Route path="great-things-to-try" element={<GreatThingsToTry />} />
         <Route path="listings" element={<Listings />} />
       </Route>
