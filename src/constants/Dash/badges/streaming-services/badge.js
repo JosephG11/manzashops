@@ -5,14 +5,14 @@
 // import { section05Categories } from "./sections/section05/section05Categories";
 // import { section06Categories } from "./sections/section06/section06Categories";
 // import { section07Categories } from "./sections/section07/section07Categories";
-import { content } from "./content";
-import { adSection01 } from "./sections/adSection01/adSection01";
+import { content } from './content';
+import { adSection01 } from './sections/adSection01/adSection01';
 // import { adSection02 } from "./sections/adSection02/adSection02";
 
 export const streamingServices = {
-  title: "Streaming Services",
-  id: "streaming-services",
-  btnImg: "/manzashops/assets/ad/streamss.png",
+  title: 'Streaming Services',
+  id: 'streaming-services',
+  btnImg: '/manzashops/assets/ad/streamss.png',
   content: content,
   sections: [
     // {
@@ -22,9 +22,9 @@ export const streamingServices = {
     //   categories: section01Categories,
     // },
     {
-      id: "adSec0001",
+      id: 'adSec0001',
       ad: true,
-      sectionName: "Ads 1",
+      sectionName: 'Ads 1',
       ads: adSection01,
     },
     // {

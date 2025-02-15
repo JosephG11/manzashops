@@ -1,6 +1,6 @@
-import DealsSection from "../components/Deals/DealsSection";
-import DealsSuggestions from "../components/Deals/DealsSuggestions";
-import DealsHero from "../components/Deals/DealsHero";
+import DealsSection from '../components/Deals/DealsSection';
+import DealsSuggestions from '../components/Deals/DealsSuggestions';
+import DealsHero from '../components/Deals/DealsHero';
 import {
   adSectionData01,
   adSectionData02,
@@ -8,16 +8,16 @@ import {
   adSectionData04,
   adSectionData05,
   adSectionData06,
-} from "../constants/Deals";
+} from '../constants/Deals';
 
 const Deals = () => {
   return (
-    <section className="bg-white w-full">
+    <section className="w-full bg-white">
       <DealsHero />
 
       <DealsSuggestions />
 
-      <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">
+      <div className="flex w-full flex-col items-center gap-10 bg-[#121212] px-0 pb-24 pt-2 md:px-12">
         <DealsSection data={adSectionData01} />
 
         <DealsSection data={adSectionData02} />

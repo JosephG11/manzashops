@@ -1,38 +1,38 @@
 export const content = [
   {
-    name: "ikea",
+    name: 'ikea',
     href: null,
-    src: "/manzashops/assets/furniture/fi.png",
+    src: '/manzashops/assets/furniture/fi.png',
   },
   {
-    name: "Raymour & Falnin",
+    name: 'Raymour & Falnin',
     href: null,
-    src: "/manzashops/assets/furniture/furraymour.png",
+    src: '/manzashops/assets/furniture/furraymour.png',
   },
   {
-    name: "Bobs Discount",
+    name: 'Bobs Discount',
     href: null,
-    src: "/manzashops/assets/furniture/furbobs.png",
+    src: '/manzashops/assets/furniture/furbobs.png',
   },
   {
-    name: "Macys",
+    name: 'Macys',
     href: null,
-    src: "/manzashops/assets/furniture/furmays.png",
+    src: '/manzashops/assets/furniture/furmays.png',
   },
   {
-    name: "Jc Penny",
+    name: 'Jc Penny',
     href: null,
-    src: "/manzashops/assets/furniture/furjcpenny.png",
+    src: '/manzashops/assets/furniture/furjcpenny.png',
   },
   {
-    name: "Mattress Firm",
+    name: 'Mattress Firm',
     href: null,
-    src: "/manzashops/assets/furniture/furmattressfirm.png",
+    src: '/manzashops/assets/furniture/furmattressfirm.png',
   },
   {
-    name: "walmart",
+    name: 'walmart',
     href: null,
-    src: "/manzashops/assets/furniture/furwalmart.png",
+    src: '/manzashops/assets/furniture/furwalmart.png',
   },
   // {
   //   name: "aldo",

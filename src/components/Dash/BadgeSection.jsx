@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import BadgeItems from "./BadgeItems";
-import QuickViewContainer from "./QuickViewContainer";
+import React, { useEffect, useState } from 'react';
+import BadgeItems from './BadgeItems';
+import QuickViewContainer from './QuickViewContainer';
 
 const BadgeSection = ({ data }) => {
   const [openContainer, setOpenContainer] = useState(null); // Track which item is open
@@ -16,74 +16,66 @@ const BadgeSection = ({ data }) => {
   useEffect(() => {
     const handleScrollLock = () => {
       if (openContainer) {
-        const scrollbarWidth =
-          window.innerWidth - document.documentElement.clientWidth;
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
         // Disable scrolling
-        document.body.style.overflow = "hidden";
+        document.body.style.overflow = 'hidden';
 
         // Compensate for scrollbar disappearance to avoid layout shift
         document.body.style.paddingRight = `${scrollbarWidth}px`;
       } else {
         // Re-enable scrolling
-        document.body.style.overflow = "";
-        document.body.style.paddingRight = "";
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
       }
     };
 
     handleScrollLock();
 
     return () => {
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
     };
   }, [openContainer]);
 
   return (
-    <div className="flex md:mx-20 mx-0 flex-col flex-wrap lg:gap-20 gap-10 lg:flex-row justify-center items-center">
+    <div className="mx-0 flex flex-col flex-wrap items-center justify-center gap-10 md:mx-20 lg:flex-row lg:gap-20">
       {data.map(({ title, content, id, btnImg, sections }) => (
         <React.Fragment key={id}>
           <div
             id={id}
-            className="text-white flex flex-col items-center rounded-[10px] border-[5px] border-black bg-black w-[382px] h-[350px]"
+            className="flex h-[350px] w-[382px] flex-col items-center rounded-[10px] border-[5px] border-black bg-black text-white"
           >
-            <div className="flex items-center justify-between w-full pb-6">
+            <div className="flex w-full items-center justify-between pb-6">
               <button
                 onClick={() => handleOpenContainer(id)}
                 type="button"
-                className="size-[70px] border-2 border-black hover:border-white rounded-xl"
+                className="size-[70px] rounded-xl border-2 border-black hover:border-white"
               >
                 <img
                   src="/manzashops/assets/badge/qv.png"
                   alt="quick view"
-                  className="size-full rounded-lg object-fit"
+                  className="object-fit size-full rounded-lg"
                 />
               </button>
 
-              <p className="bg-black justify-center h-full text-center flex text-white text-3xl ">
+              <p className="flex h-full justify-center bg-black text-center text-3xl text-white">
                 {title}
               </p>
 
-              <div className="size-[70px] border-2 border-black rounded-xl">
-                <img
-                  src={btnImg}
-                  alt="badge"
-                  className="size-full rounded-lg object-fit "
-                />
+              <div className="size-[70px] rounded-xl border-2 border-black">
+                <img src={btnImg} alt="badge" className="object-fit size-full rounded-lg" />
               </div>
             </div>
 
-            <div className="flex flex-wrap pl-9 pt-4 gap-4 overflow-y-scroll">
+            <div className="flex flex-wrap gap-4 overflow-y-scroll pl-9 pt-4">
               <BadgeItems data={content} />
             </div>
           </div>
 
           {/* Quick view menu */}
           {openContainer === id && (
-            <QuickViewContainer
-              handleCloseContainer={handleCloseContainer}
-              sections={sections}
-            />
+            <QuickViewContainer handleCloseContainer={handleCloseContainer} sections={sections} />
           )}
         </React.Fragment>
       ))}

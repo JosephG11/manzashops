@@ -1,6 +1,6 @@
-import { posters, sliderData } from "../../constants/Movies";
-import MoviePoster from "./MoviePoster";
-import MovieImageSlider from "./MovieImageSlider";
+import { posters, sliderData } from '../../constants/Movies';
+import MoviePoster from './MoviePoster';
+import MovieImageSlider from './MovieImageSlider';
 
 const {
   poster01: { src: poster01Src, alt: poster01alt },
@@ -8,23 +8,15 @@ const {
 } = posters;
 
 const MovieHero = () => (
-  <div className="flex flex-col lgc:flex-row w-full bg-black rounded-t-[10px]">
+  <div className="flex w-full flex-col rounded-t-[10px] bg-black lgc:flex-row">
     <MoviePoster src={poster01Src} alt={poster01alt} styles="lgc:flex hidden" />
 
     <MovieImageSlider data={sliderData} />
 
-    <div className="flex flex-col md:flex-row justify-around py-6 items-center gap-6">
-      <MoviePoster
-        src={poster01Src}
-        alt={poster01alt}
-        styles="flex lgc:hidden"
-      />
+    <div className="flex flex-col items-center justify-around gap-6 py-6 md:flex-row">
+      <MoviePoster src={poster01Src} alt={poster01alt} styles="flex lgc:hidden" />
 
-      <MoviePoster
-        src={poster02Src}
-        alt={poster02alt}
-        styles="flex lgc:hidden "
-      />
+      <MoviePoster src={poster02Src} alt={poster02alt} styles="flex lgc:hidden " />
     </div>
 
     <MoviePoster src={poster02Src} alt={poster02alt} styles="lgc:flex hidden" />

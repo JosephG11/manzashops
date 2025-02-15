@@ -3,14 +3,9 @@ const MoviePoster = ({ href, src, alt, styles }) => (
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className={`bg-black border-[2px] border-white hover:border-secondary w-[310px] rounded-[10px] shrink-0 h-[430px] xl:h-[55vh] 2xlc:h-[45vh] cursor-pointer ${styles}`}
+    className={`h-[430px] w-[310px] shrink-0 cursor-pointer rounded-[10px] border-[2px] border-white bg-black hover:border-secondary xl:h-[55vh] 2xlc:h-[45vh] ${styles}`}
   >
-    <img
-      src={src}
-      alt={alt}
-      className="object-fit size-full rounded-[8px]"
-      loading="lazy"
-    />
+    <img src={src} alt={alt} className="object-fit size-full rounded-[8px]" loading="lazy" />
   </a>
 );
 

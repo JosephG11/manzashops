@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 const UseIntersectionObserver = ({
   suggetionsItems,
@@ -12,10 +12,7 @@ const UseIntersectionObserver = ({
       if (isScrollingRef.current) return;
 
       entries.forEach((entry) => {
-        if (
-          entry.isIntersecting &&
-          clickedButtonRef.current === entry.target.id
-        ) {
+        if (entry.isIntersecting && clickedButtonRef.current === entry.target.id) {
           setActiveButton(entry.target.id);
         } else if (!entry.isIntersecting && activeButton === entry.target.id) {
           clickedButtonRef.current = null;
@@ -29,9 +26,7 @@ const UseIntersectionObserver = ({
       threshold: 1,
     });
 
-    const elements = suggetionsItems.map(({ id }) =>
-      document.getElementById(id)
-    );
+    const elements = suggetionsItems.map(({ id }) => document.getElementById(id));
 
     elements.forEach((element) => {
       if (element) observer.observe(element);
@@ -40,13 +35,7 @@ const UseIntersectionObserver = ({
     return () => {
       observer.disconnect();
     };
-  }, [
-    suggetionsItems,
-    activeButton,
-    setActiveButton,
-    clickedButtonRef,
-    isScrollingRef,
-  ]);
+  }, [suggetionsItems, activeButton, setActiveButton, clickedButtonRef, isScrollingRef]);
 };
 
 export default UseIntersectionObserver;

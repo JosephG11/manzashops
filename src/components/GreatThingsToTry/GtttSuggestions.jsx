@@ -1,8 +1,8 @@
-import { useState, useRef } from "react";
-import ScrollToTop from "../ScrollToTop";
-import { suggetionsItems } from "../../constants/GreatThingsToTry";
-import UseIntersectionObserver from "../../hooks/UseIntersectionObserver";
-import SuggestionsButton from "../SuggestionsButton";
+import { useState, useRef } from 'react';
+import ScrollToTop from '../ScrollToTop';
+import { suggetionsItems } from '../../constants/GreatThingsToTry';
+import UseIntersectionObserver from '../../hooks/UseIntersectionObserver';
+import SuggestionsButton from '../SuggestionsButton';
 
 const GtttSuggestions = () => {
   const [activeButton, setActiveButton] = useState(null);
@@ -18,7 +18,7 @@ const GtttSuggestions = () => {
   });
 
   return (
-    <div className="flex items-center gap-4 justify-between bg-[#141414] border-[3px] border-black flex-nowrap sticky px-3 top-0 z-10 overflow-x-auto h-24">
+    <div className="sticky top-0 z-10 flex h-24 flex-nowrap items-center justify-between gap-4 overflow-x-auto border-[3px] border-black bg-[#141414] px-3">
       <ScrollToTop />
 
       {suggetionsItems.map(({ id, title }) => (

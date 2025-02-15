@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink } from 'react-router';
 
 const NavLinks = ({ navItems }) => (
   <>
@@ -6,17 +6,17 @@ const NavLinks = ({ navItems }) => (
       <NavLink
         key={name}
         to={path}
-        end={path === "/manzashops/"}
+        end={path === '/manzashops/'}
         className={({ isActive }) =>
           isActive
-            ? "text-black text-[22px] hover:text-[#0000ff]"
-            : "text-white hover:text-[#0000ff]"
+            ? 'text-[22px] text-black hover:text-[#0000ff]'
+            : 'text-white hover:text-[#0000ff]'
         }
       >
         {({ isActive }) => (
           <>
-            <span>{isActive ? "| " : undefined}</span>{" "}
-            <span className={isActive ? "underline" : undefined}>{name}</span>
+            <span>{isActive ? '| ' : undefined}</span>{' '}
+            <span className={isActive ? 'underline' : undefined}>{name}</span>
           </>
         )}
       </NavLink>

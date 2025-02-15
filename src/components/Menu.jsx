@@ -1,10 +1,10 @@
-import NavLinks from "./NavLinks";
-import { navItems } from "../constants";
+import NavLinks from './NavLinks';
+import { navItems } from '../constants';
 
 const Menu = () => {
   return (
-    <nav className="rounded-b-[10px] bg-navbar border-[3px] border-black h-3 lg:h-[50px]">
-      <div className="hidden lg:flex h-full justify-around items-center">
+    <nav className="h-3 rounded-b-[10px] border-[3px] border-black bg-navbar lg:h-[50px]">
+      <div className="hidden h-full items-center justify-around lg:flex">
         <NavLinks navItems={navItems} />
       </div>
     </nav>
