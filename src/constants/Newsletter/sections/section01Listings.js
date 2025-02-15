@@ -18,6 +18,7 @@ const section01Listings = [
     source: 'The Guardian',
     time: '11:37 PM',
     href: 'https://www.nytimes.com/',
+    outsideLink: true,
   },
   {
     id: 'al00002',
@@ -38,6 +39,7 @@ const section01Listings = [
     source: 'The Guardian',
     time: '1:15 PM',
     href: 'https://www.nytimes.com/',
+    outsideLink: false,
   },
 ];
 
