@@ -1,13 +1,9 @@
 const ListingsCard = ({ img, name, rate, links, rating, profession }) => {
   return (
-    <div className="bg-header flex flex-col rounded-[10px] min-h-[420px] h-fit pb-8 min-w-[250px] w-[250px] border-white border-[1px] shadow-[2px_2px_5px_white]">
-      <img
-        src={img}
-        alt="product-image"
-        className="w-full h-48 bg-slate-600 object-fit mt-6"
-      />
+    <div className="flex h-fit min-h-[420px] w-[250px] min-w-[250px] flex-col rounded-[10px] border-[1px] border-white bg-header pb-8 shadow-[2px_2px_5px_white]">
+      <img src={img} alt="product-image" className="object-fit mt-6 h-48 w-full bg-slate-600" />
 
-      <div className="w-full flex flex-col text-white p-4 gap-3">
+      <div className="flex w-full flex-col gap-3 p-4 text-white">
         <p className="capitalize">
           name: <span>{name}</span>
         </p>
@@ -24,12 +20,12 @@ const ListingsCard = ({ img, name, rate, links, rating, profession }) => {
           Manza Rated: <span>{rating}</span>
         </p>
 
-        <div className="flex gap-[1px] w-full justify-between">
+        <div className="flex w-full justify-between gap-[1px]">
           {links.map(({ href, id, img, alt }) => (
             <a
               key={id}
               href={href}
-              className="border-2 rounded-lg border-white hover:border-secondary size-10"
+              className="size-10 rounded-lg border-2 border-white hover:border-secondary"
             >
               <img src={img} alt={alt} className="size-full rounded-md" />
             </a>

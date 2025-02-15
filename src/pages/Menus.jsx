@@ -1,6 +1,6 @@
-import MenusSection from "../components/Menus/MenusSection";
-import MenusSuggestions from "../components/Menus/MenusSuggestions";
-import MenusHero from "../components/Menus/MenusHero";
+import MenusSection from '../components/Menus/MenusSection';
+import MenusSuggestions from '../components/Menus/MenusSuggestions';
+import MenusHero from '../components/Menus/MenusHero';
 import {
   adSectionData01,
   adSectionData02,
@@ -8,16 +8,16 @@ import {
   adSectionData04,
   adSectionData05,
   adSectionData06,
-} from "../constants/Menus";
+} from '../constants/Menus';
 
 const Menus = () => {
   return (
-    <section className="bg-white w-full">
+    <section className="w-full bg-white">
       <MenusHero />
 
       <MenusSuggestions />
 
-      <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">
+      <div className="flex w-full flex-col items-center gap-10 bg-[#121212] px-0 pb-24 pt-2 md:px-12">
         <MenusSection data={adSectionData01} />
 
         <MenusSection data={adSectionData02} />

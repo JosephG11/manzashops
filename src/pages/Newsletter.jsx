@@ -1,5 +1,5 @@
-import NewsletterContent from "../components/Newsletter/NewsletterContent";
-import NewsletterHero from "../components/Newsletter/NewsletterHero";
+import NewsletterContent from '../components/Newsletter/NewsletterContent';
+import NewsletterHero from '../components/Newsletter/NewsletterHero';
 
 const Newsletter = () => {
   return (

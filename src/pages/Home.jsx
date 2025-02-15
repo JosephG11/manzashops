@@ -1,9 +1,5 @@
 const Home = () => {
-  return (
-    <section className="h-[50vh] flex justify-center items-center">
-      Home
-    </section>
-  );
+  return <section className="flex h-[50vh] items-center justify-center">Home</section>;
 };
 
 export default Home;

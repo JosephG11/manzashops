@@ -1,6 +1,6 @@
-import ServicesSection from "../components/Services/ServicesSection";
-import ServicesSuggestions from "../components/Services/ServicesSuggestions";
-import ServicesHero from "../components/Services/ServicesHero";
+import ServicesSection from '../components/Services/ServicesSection';
+import ServicesSuggestions from '../components/Services/ServicesSuggestions';
+import ServicesHero from '../components/Services/ServicesHero';
 import {
   adSectionData01,
   adSectionData02,
@@ -8,16 +8,16 @@ import {
   adSectionData04,
   adSectionData05,
   adSectionData06,
-} from "../constants/Deals";
+} from '../constants/Deals';
 
 const Services = () => {
   return (
-    <section className="bg-white w-full">
+    <section className="w-full bg-white">
       <ServicesHero />
 
       <ServicesSuggestions />
 
-      <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">
+      <div className="flex w-full flex-col items-center gap-10 bg-[#121212] px-0 pb-24 pt-2 md:px-12">
         <ServicesSection data={adSectionData01} />
 
         <ServicesSection data={adSectionData02} />

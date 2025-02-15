@@ -4,7 +4,6 @@ changes made part 2
 
 changes made 3
 
-
 # ManzaShop
 
 ## Setup

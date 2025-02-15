@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export const useScreenSizeLogger = () => {
   const [screenSize, setScreenSize] = useState({
@@ -15,12 +15,12 @@ export const useScreenSizeLogger = () => {
       console.log(`Screen size: ${window.innerWidth}x${window.innerHeight}`);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     // Log the initial size
     handleResize();
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return screenSize;

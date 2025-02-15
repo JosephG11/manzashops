@@ -1,37 +1,35 @@
-import { section01Categories } from "./sections/section01/section01Categories";
-import { section02Categories } from "./sections/section02/section02Categories";
-import { section03Categories } from "./sections/section03/section03Categories";
-import { section04Categories } from "./sections/section04/section04Categories";
-import { section05Categories } from "./sections/section05/section05Categories";
-import { section06Categories } from "./sections/section06/section06Categories";
-import { section07Categories } from "./sections/section07/section07Categories";
-import { adSection01 } from "./sections/adSection01/adSection01";
-import { adSection02 } from "./sections/adSection02/adSection02";
+import { section01Categories } from './sections/section01/section01Categories';
+import { section02Categories } from './sections/section02/section02Categories';
+import { section03Categories } from './sections/section03/section03Categories';
+import { section04Categories } from './sections/section04/section04Categories';
+import { section05Categories } from './sections/section05/section05Categories';
+import { section06Categories } from './sections/section06/section06Categories';
+import { section07Categories } from './sections/section07/section07Categories';
+import { adSection01 } from './sections/adSection01/adSection01';
+import { adSection02 } from './sections/adSection02/adSection02';
 
 export const macys = {
   title: "Macy's",
-  id: "macys",
-  btnImg: "/manzashops/assets/suits/suitsmacys.png",
-  href: "https://www.abercrombie.com/shop/us/mens-tops--1/",
+  id: 'macys',
+  btnImg: '/manzashops/assets/suits/suitsmacys.png',
+  href: 'https://www.abercrombie.com/shop/us/mens-tops--1/',
   sections: [
-
     {
-      id: "adSec0001",
+      id: 'adSec0001',
       ad: true,
-      sectionName: "Deals",
+      sectionName: 'Deals',
       ads: adSection01,
     },
     {
-
-      id: "sec0001",
-      sectionName: "Mens",
-      sectionImg: "/manzashops/assets/badge/YouTube Thumbnail-4.png",
+      id: 'sec0001',
+      sectionName: 'Mens',
+      sectionImg: '/manzashops/assets/badge/YouTube Thumbnail-4.png',
       categories: section01Categories,
     },
     {
-      id: "sec0002",
-      sectionName: "Womans",
-      sectionImg: "/manzashops/assets/badge/YouTube Thumbnail-5.png",
+      id: 'sec0002',
+      sectionName: 'Womans',
+      sectionImg: '/manzashops/assets/badge/YouTube Thumbnail-5.png',
       categories: section02Categories,
     },
     // {
@@ -41,27 +39,27 @@ export const macys = {
     //   categories: section03Categories,
     // },
     {
-      id: "sec0004",
-      sectionName: "kids",
-      sectionImg: "/manzashops/assets/badge/YouTube Thumbnail-7.png",
+      id: 'sec0004',
+      sectionName: 'kids',
+      sectionImg: '/manzashops/assets/badge/YouTube Thumbnail-7.png',
       categories: section04Categories,
     },
     {
-      id: "sec0005",
-      sectionName: "suits",
-      sectionImg: "/manzashops/assets/badge/YouTube Thumbnail-2.png",
+      id: 'sec0005',
+      sectionName: 'suits',
+      sectionImg: '/manzashops/assets/badge/YouTube Thumbnail-2.png',
       categories: section05Categories,
     },
     {
-      id: "sec0006",
-      sectionName: "Dresses",
-      sectionImg: "/manzashops/assets/badge/YouTube Thumbnail-3.png",
+      id: 'sec0006',
+      sectionName: 'Dresses',
+      sectionImg: '/manzashops/assets/badge/YouTube Thumbnail-3.png',
       categories: section06Categories,
     },
     {
-      id: "sec0007",
-      sectionName: "Clearance",
-      sectionImg: "/manzashops/assets/badge/YouTube Thumbnail-2.png",
+      id: 'sec0007',
+      sectionName: 'Clearance',
+      sectionImg: '/manzashops/assets/badge/YouTube Thumbnail-2.png',
       categories: section07Categories,
     },
 

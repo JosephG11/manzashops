@@ -10,9 +10,9 @@ const NewsletterCard = ({
   href,
 }) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:items-start w-[90%] md:w-fit  gap-2 lg:gap-0">
-      <div className="flex lg:flex-col flex-row w-full lg:w-16 leading-5 items-baseline lg:items-stretch gap-2 lg:gap-0 pb-2 md:pb-0">
-        <p className="text-3xl font-bold text-red-400 capitalize">{month}</p>
+    <div className="flex w-[90%] flex-col items-center gap-2 md:w-fit lg:flex-row lg:items-start lg:gap-0">
+      <div className="flex w-full flex-row items-baseline gap-2 pb-2 leading-5 md:pb-0 lg:w-16 lg:flex-col lg:items-stretch lg:gap-0">
+        <p className="text-3xl font-bold capitalize text-red-400">{month}</p>
         <p className="text-center text-2xl text-white">{day}</p>
         <p className="text-center text-sm text-white">{year}</p>
       </div>
@@ -22,29 +22,28 @@ const NewsletterCard = ({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col bg-header rounded-[10px] h-fit md:h-[340px] w-full md:w-[700px] border-[1px] border-white hover:border-secondary"
+          className="flex h-fit w-full flex-col rounded-[10px] border-[1px] border-white bg-header hover:border-secondary md:h-[340px] md:w-[700px]"
         >
-          <div className="w-full flex flex-col md:flex-row">
-            <div className="flex md:justify-start justify-center">
+          <div className="flex w-full flex-col md:flex-row">
+            <div className="flex justify-center md:justify-start">
               <img
                 src={src}
                 alt={alt}
-                className="h-[240px] md:h-[180px] md:min-w-[280px] md:w-[200px] w-full rounded-tl-[10px] rounded-tr-[10px]  md:rounded-tr-[0px]"
+                className="h-[240px] w-full rounded-tl-[10px] rounded-tr-[10px] md:h-[180px] md:w-[200px] md:min-w-[280px] md:rounded-tr-[0px]"
                 loading="lazy"
               />
             </div>
 
-            <div className="w-full text-white p-4">
-              <div className="w-full flex md:justify-center justify-start">
-                <p className="text-xl md:text-2xl border-b-[1px] border-white leading-5">
+            <div className="w-full p-4 text-white">
+              <div className="flex w-full justify-start md:justify-center">
+                <p className="border-b-[1px] border-white text-xl leading-5 md:text-2xl">
                   Title: <span className="capitalize">{title}</span>
                 </p>
               </div>
 
-              <div className="flex flex-col w-full md:flex-row h-full pt-5 md:pt-10 pl-0 md:pl-4 gap-3 md:gap-0 text-lg md:text-xl">
+              <div className="flex h-full w-full flex-col gap-3 pl-0 pt-5 text-lg md:flex-row md:gap-0 md:pl-4 md:pt-10 md:text-xl">
                 <p className="w-full">
-                  Type:{" "}
-                  <span className="capitalize text-green-500">{type}</span>
+                  Type: <span className="capitalize text-green-500">{type}</span>
                 </p>
                 <p className="w-full">
                   By: <span className="capitalize">{author}</span>
@@ -53,13 +52,13 @@ const NewsletterCard = ({
             </div>
           </div>
 
-          <div className="w-full overflow-y-auto pt-1 pb-2 px-4">
+          <div className="w-full overflow-y-auto px-4 pb-2 pt-1">
             <p className="text-white">{description}</p>
           </div>
         </a>
 
         <div className="flex justify-end pr-6">
-          <div className="bg-header text-white text-lg flex justify-between px-2 w-64">
+          <div className="flex w-64 justify-between bg-header px-2 text-lg text-white">
             <p className="underline">{source}</p>
             <p className="">{time}</p>
           </div>

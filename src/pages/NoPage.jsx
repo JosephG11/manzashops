@@ -1,9 +1,5 @@
 const NoPage = () => {
-  return (
-    <section className="h-[50vh] flex justify-center items-center">
-      NoPage
-    </section>
-  );
+  return <section className="flex h-[50vh] items-center justify-center">NoPage</section>;
 };
 
 export default NoPage;

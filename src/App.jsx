@@ -1,16 +1,16 @@
-import { Route, Routes } from "react-router";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import NoPage from "./pages/NoPage";
-import Dash from "./pages/Dash";
-import Deals from "./pages/Deals";
-import Services from "./pages/Services";
-import Jobs from "./pages/Jobs";
-import Menus from "./pages/Menus";
-import Movies from "./pages/Movies";
-import Newsletter from "./pages/Newsletter";
-import GreatThingsToTry from "./pages/GreatThingsToTry";
-import Listings from "./pages/Listings";
+import { Route, Routes } from 'react-router';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import NoPage from './pages/NoPage';
+import Dash from './pages/Dash';
+import Deals from './pages/Deals';
+import Services from './pages/Services';
+import Jobs from './pages/Jobs';
+import Menus from './pages/Menus';
+import Movies from './pages/Movies';
+import Newsletter from './pages/Newsletter';
+import GreatThingsToTry from './pages/GreatThingsToTry';
+import Listings from './pages/Listings';
 
 const App = () => {
   return (

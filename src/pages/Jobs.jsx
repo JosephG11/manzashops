@@ -1,6 +1,6 @@
-import JobsSection from "../components/Jobs/JobsSection";
-import JobsSuggestions from "../components/Jobs/JobsSuggestions";
-import JobsHero from "../components/Jobs/JobsHero";
+import JobsSection from '../components/Jobs/JobsSection';
+import JobsSuggestions from '../components/Jobs/JobsSuggestions';
+import JobsHero from '../components/Jobs/JobsHero';
 import {
   adSectionData01,
   adSectionData02,
@@ -8,16 +8,16 @@ import {
   adSectionData04,
   adSectionData05,
   adSectionData06,
-} from "../constants/Jobs";
+} from '../constants/Jobs';
 
 const Jobs = () => {
   return (
-    <section className="bg-white w-full">
+    <section className="w-full bg-white">
       <JobsHero />
 
       <JobsSuggestions />
 
-      <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">
+      <div className="flex w-full flex-col items-center gap-10 bg-[#121212] px-0 pb-24 pt-2 md:px-12">
         <JobsSection data={adSectionData01} />
 
         <JobsSection data={adSectionData02} />

@@ -1,8 +1,8 @@
 const AdCard = ({ href, img, alt }) => {
   return (
-    <div className="border-[2px] border-white hover:border-secondary w-[419px] h-80 shrink-0">
+    <div className="h-80 w-[419px] shrink-0 border-[2px] border-white hover:border-secondary">
       <a href={href}>
-        <img src={img} alt={alt} className="object-fill size-full" />
+        <img src={img} alt={alt} className="size-full object-fill" />
       </a>
     </div>
   );

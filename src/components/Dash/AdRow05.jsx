@@ -1,19 +1,15 @@
 const AdRow05 = ({ data }) => (
-  <div className="bg-black xl:w-fit md:w-[95%] w-[99%] rounded-[10px]">
-    <h3 className="text-white text-[24px] pl-5 pt-2">Ads</h3>
+  <div className="w-[99%] rounded-[10px] bg-black md:w-[95%] xl:w-fit">
+    <h3 className="pl-5 pt-2 text-[24px] text-white">Ads</h3>
 
-    <div className="h-[440px]  items-center px-10 pb-10 pt-3 flex gap-8 xl:justify-center  overflow-x-auto">
+    <div className="flex h-[440px] items-center gap-8 overflow-x-auto px-10 pb-10 pt-3 xl:justify-center">
       {data.map(({ id, href, src, alt }) => (
         <div
           key={id}
-          className="bg-slate-200 w-96 h-full rounded-[10px] shrink-0 border-[2px] border-white hover:border-secondary"
+          className="h-full w-96 shrink-0 rounded-[10px] border-[2px] border-white bg-slate-200 hover:border-secondary"
         >
           <a href={href}>
-            <img
-              src={src}
-              alt={alt}
-              className="object-fit size-full rounded-[8px]"
-            />
+            <img src={src} alt={alt} className="object-fit size-full rounded-[8px]" />
           </a>
         </div>
       ))}

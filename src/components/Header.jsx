@@ -1,64 +1,64 @@
-import { useState } from "react";
-import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import NavLinks from "./NavLinks";
-import { navItems } from "../constants";
-import { Link } from "react-router";
+import { useState } from 'react';
+import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
+import NavLinks from './NavLinks';
+import { navItems } from '../constants';
+import { Link } from 'react-router';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="flex justify-between items-center bg-header h-[50px] px-16 xl:px-40">
+    <header className="flex h-[50px] items-center justify-between bg-header px-16 xl:px-40">
       <Link to="/" className="text-white hover:text-secondary">
         Manza
       </Link>
 
       <input
-        className="border-black border-[3px] rounded-[5px] w-[480px] xl:w-[550px] h-8 hidden lg:inline-block"
+        className="hidden h-8 w-[480px] rounded-[5px] border-[3px] border-black lg:inline-block xl:w-[550px]"
         placeholder="Search..."
       />
 
-      <div className="lg:flex lg:gap-16 md:gap-4 hidden">
-        <Link to="/mission" className="text-white px-2">
+      <div className="hidden md:gap-4 lg:flex lg:gap-16">
+        <Link to="/mission" className="px-2 text-white">
           Our Mission
         </Link>
 
-        <Link to="/checkout" className="text-white px-2">
+        <Link to="/checkout" className="px-2 text-white">
           Support Us
         </Link>
       </div>
 
-      <div className="lg:hidden flex flex-1 justify-end items-center">
+      <div className="flex flex-1 items-center justify-end lg:hidden">
         <button type="button" onClick={() => setToggle((prev) => !prev)}>
           {toggle ? (
-            <RxCross1 className="text-white size-7" />
+            <RxCross1 className="size-7 text-white" />
           ) : (
-            <RxHamburgerMenu className="text-white size-7" />
+            <RxHamburgerMenu className="size-7 text-white" />
           )}
         </button>
 
         <div
           className={`${
-            toggle ? "flex" : "hidden"
-          } bg-header flex-col absolute top-20 right-0 mx-4 mt-2 min-w-[140px] rounded-lg sidebar border-t-4 border-secondary z-20`}
+            toggle ? 'flex' : 'hidden'
+          } sidebar absolute right-0 top-20 z-20 mx-4 mt-2 min-w-[140px] flex-col rounded-lg border-t-4 border-secondary bg-header`}
         >
           <div className="p-6">
             <input
-              className="border-black border-[3px] rounded-[5px] w-full h-8 "
+              className="h-8 w-full rounded-[5px] border-[3px] border-black"
               placeholder="Search..."
             />
           </div>
 
-          <div className="w-full flex gap-4 justify-between pb-3 px-6">
-            <Link to="/mission" className="text-white px-2">
+          <div className="flex w-full justify-between gap-4 px-6 pb-3">
+            <Link to="/mission" className="px-2 text-white">
               Our Mission
             </Link>
 
-            <Link to="/checkout" className="text-white px-2">
+            <Link to="/checkout" className="px-2 text-white">
               Support Us
             </Link>
           </div>
 
-          <ul className="flex flex-col flex-1 px-6 pb-5 rounded-b-lg pt-3 gap-2 bg-secondary">
+          <ul className="flex flex-1 flex-col gap-2 rounded-b-lg bg-secondary px-6 pb-5 pt-3">
             <NavLinks navItems={navItems} />
           </ul>
         </div>

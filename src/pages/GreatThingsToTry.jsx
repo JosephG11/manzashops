@@ -1,6 +1,6 @@
-import GtttSection from "../components/GreatThingsToTry/GtttSection";
-import GtttSuggestions from "../components/GreatThingsToTry/GtttSuggestions";
-import GtttHero from "../components/GreatThingsToTry/GtttHero";
+import GtttSection from '../components/GreatThingsToTry/GtttSection';
+import GtttSuggestions from '../components/GreatThingsToTry/GtttSuggestions';
+import GtttHero from '../components/GreatThingsToTry/GtttHero';
 import {
   adSectionData01,
   adSectionData02,
@@ -8,16 +8,16 @@ import {
   adSectionData04,
   adSectionData05,
   adSectionData06,
-} from "../constants/GreatThingsToTry";
+} from '../constants/GreatThingsToTry';
 
 const GreatThingsToTry = () => {
   return (
-    <section className="bg-white w-full">
+    <section className="w-full bg-white">
       <GtttHero />
 
       <GtttSuggestions />
 
-      <div className="flex flex-col items-center gap-10 w-full md:px-12 px-0 pt-2 pb-24 bg-[#121212]">
+      <div className="flex w-full flex-col items-center gap-10 bg-[#121212] px-0 pb-24 pt-2 md:px-12">
         <GtttSection data={adSectionData01} />
 
         <GtttSection data={adSectionData02} />

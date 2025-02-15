@@ -1,12 +1,7 @@
 const SuggestionsButton = ({
   id,
   title,
-  scrollingProps: {
-    activeButton,
-    isScrollingRef,
-    clickedButtonRef,
-    setActiveButton,
-  },
+  scrollingProps: { activeButton, isScrollingRef, clickedButtonRef, setActiveButton },
   offset,
 }) => {
   const scrollToElement = (id) => {
@@ -17,12 +12,11 @@ const SuggestionsButton = ({
       clickedButtonRef.current = id;
       setActiveButton(id);
 
-      const elementPosition =
-        targetElement.getBoundingClientRect().top + window.scrollY;
+      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
 
       window.scrollTo({
         top: elementPosition - offset,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
 
       // Stop scrolling after a delay to allow smooth scrolling to complete
@@ -37,12 +31,10 @@ const SuggestionsButton = ({
       type="button"
       onClick={() => scrollToElement(id)}
       className={` ${
-        activeButton === id
-          ? "text-secondary border-secondary"
-          : "text-white border-white"
-      } border-[1px] rounded-[10px] flex w-fit justify-center items-center hover:border-secondary hover:text-secondary shrink-0`}
+        activeButton === id ? 'border-secondary text-secondary' : 'border-white text-white'
+      } flex w-fit shrink-0 items-center justify-center rounded-[10px] border-[1px] hover:border-secondary hover:text-secondary`}
     >
-      <p className="capitalize text-2xl px-5 py-2">{title}</p>
+      <p className="px-5 py-2 text-2xl capitalize">{title}</p>
     </button>
   );
 };
