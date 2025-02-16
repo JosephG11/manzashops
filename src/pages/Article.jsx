@@ -10,26 +10,28 @@ const Article = () => {
 
   const { heroImage, businessLinks, referenceLinks, adImage, article } = data;
 
+  const ad = (
+    <a
+      href={adImage.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="h-[430px] w-[310px] shrink-0 cursor-pointer rounded-[10px] border-[2px] border-black bg-black hover:border-secondary"
+    >
+      <img
+        src={adImage.src}
+        alt={adImage.alt}
+        className="object-fit size-full rounded-[8px]"
+        loading="lazy"
+      />
+    </a>
+  );
+
   return (
     <section className="flex w-full gap-10 bg-header px-0 lg:px-10">
       <div className="m-auto w-full max-w-screen-xl">
         <ArticleHero heroImage={heroImage} />
 
-        <div className="mb-12 flex h-[430px] w-full justify-center pt-2 xl:hidden">
-          <a
-            href={adImage.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="h-[430px] w-[310px] shrink-0 cursor-pointer rounded-[10px] border-[2px] border-white bg-black hover:border-secondary"
-          >
-            <img
-              src={adImage.src}
-              alt={adImage.alt}
-              className="object-fit size-full rounded-[8px]"
-              loading="lazy"
-            />
-          </a>
-        </div>
+        <div className="mb-12 flex h-[430px] w-full justify-center pt-2 xl:hidden">{ad}</div>
 
         <ArticleCards businessLinks={businessLinks} referenceLinks={referenceLinks} />
 
@@ -78,19 +80,7 @@ const Article = () => {
       </div>
 
       <div className="sticky top-0 z-10 mb-12 hidden h-[430px] w-1/4 justify-center pt-2 xl:flex">
-        <a
-          href={adImage.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`h-[430px] w-[310px] shrink-0 cursor-pointer rounded-[10px] border-[2px] border-white bg-black hover:border-secondary`}
-        >
-          <img
-            src={adImage.src}
-            alt={adImage.alt}
-            className="object-fit size-full rounded-[8px]"
-            loading="lazy"
-          />
-        </a>
+        {ad}
       </div>
     </section>
   );
