@@ -6,7 +6,12 @@ const LinksCard = ({ links, title }) => {
         <ol className="list-inside list-decimal columns-2 p-2 text-slate-100">
           {links.map(({ title, href }, i) => (
             <li key={i}>
-              <a href={href} className="text-slate-400 hover:text-white">
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-white"
+              >
                 {title}
               </a>
             </li>
