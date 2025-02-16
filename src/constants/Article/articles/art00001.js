@@ -87,8 +87,8 @@ export const art00001 = {
     },
   ],
   article: {
-    title: 'title',
-    author: 'Some guy',
+    title: 'Netflix added 13M new subscribers',
+    author: 'John Doe',
     createdAt: '52 minutes ago',
     shareLinks: [],
     content: [
