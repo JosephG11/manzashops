@@ -38,6 +38,12 @@ const NewsletterCard = ({
           <Link
             to={`/manzashops/newsletter/articles/${articleId}`}
             className="flex h-fit w-full flex-col rounded-[10px] border-[1px] border-white bg-header hover:border-secondary md:h-[340px] md:w-[700px]"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+              })
+            }
           >
             <NewsletterCardContent {...cardProps} />
           </Link>
