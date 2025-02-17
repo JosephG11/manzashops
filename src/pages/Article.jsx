@@ -25,14 +25,14 @@ const Article = () => {
       <div className="m-auto w-full max-w-screen-xl">
         <ArticleHero {...heroImage} />
 
+        <ArticleCards businessLinks={businessLinks} referenceLinks={referenceLinks} />
+
+        <ArticleContent {...article} />
+
         {/* Mobile Ad */}
         <div className="mb-12 flex h-[430px] w-full justify-center pt-2 xl:hidden">
           <ArticleAd {...adImage} />
         </div>
-
-        <ArticleCards businessLinks={businessLinks} referenceLinks={referenceLinks} />
-
-        <ArticleContent {...article} />
       </div>
 
       {/* Desktop Ad */}

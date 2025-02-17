@@ -22,7 +22,7 @@ const LinksCard = ({ links = [], title = '' }) => {
 
   return (
     <div className="h-fit w-96 rounded-[10px] border-[1px] border-white bg-zinc-900 p-2 shadow-[7px_7px_7px_black] sm:min-h-52">
-      <button className="hidden bg-black px-4 py-2 text-lg text-slate-100 sm:block">{title}</button>
+      <div className="hidden w-fit bg-black px-4 py-2 text-lg text-slate-100 sm:block">{title}</div>
 
       <button
         aria-expanded={!toggle}
