@@ -13,6 +13,7 @@ const NewsletterImageSlider = ({ data }) => {
             >
               <img
                 src={src}
+                loading="eager"
                 className={`object-fit h-full w-[171vh] rounded-[10px] shadow-[10px_10px_10px_black] ${styles}`}
               />
             </a>
